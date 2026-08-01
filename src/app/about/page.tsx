@@ -52,9 +52,9 @@ export default function AboutPage() {
               />
               <div>
                 <h1 className="text-3xl font-bold text-neutral-900 mb-2">Hoàng Nguyễn</h1>
-                <p className="text-sm font-medium text-primary-800 mb-1">Người đại diện của CRISIS SHIELD</p>
-                <p className="text-sm font-semibold text-primary-900 mb-3">Đơn vị vận hành: HOANG NGUYEN CRISIS SHIELD MEDIA</p>
-                <p className="text-neutral-600 leading-relaxed">
+                <p className="text-sm font-medium text-neutral-800 mb-1">Người đại diện của CRISIS SHIELD</p>
+                <p className="text-sm font-semibold text-neutral-900 mb-3">Đơn vị vận hành: HOANG NGUYEN CRISIS SHIELD MEDIA</p>
+                <p className="text-neutral-700 leading-relaxed">
                   Chúng tôi chuyên tư vấn xử lý khủng hoảng truyền thông, khôi phục tài khoản Facebook và xây dựng hồ sơ khiếu nại với tư duy thực chiến, căn cứ pháp lý và quy trình minh bạch. Mỗi vụ việc được tiếp cận dựa trên bằng chứng, mục tiêu rõ ràng và phương án ứng phó phù hợp với từng tình huống.
                 </p>
               </div>
@@ -73,8 +73,8 @@ export default function AboutPage() {
           </div>
 
           <div className="rounded-[2rem] border border-primary-800/60 bg-primary-900 p-8 text-white shadow-[0_12px_40px_rgba(15,23,42,0.16)]">
-            <h2 className="text-xl font-semibold mb-4">Điều khách hàng nên biết trước khi hợp tác</h2>
-            <ul className="space-y-3 text-sm text-primary-100">
+            <h2 className="text-xl font-semibold mb-4 text-white">Điều khách hàng nên biết trước khi hợp tác</h2>
+            <ul className="space-y-3 text-sm text-slate-100">
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
                 <span>Phạm vi hỗ trợ và mục tiêu xử lý sẽ được xác định rõ ngay từ đầu.</span>

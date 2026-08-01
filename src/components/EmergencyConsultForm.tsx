@@ -91,7 +91,7 @@ export default function EmergencyConsultForm() {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center gap-2 rounded-xl border border-red-500/20 bg-gradient-to-r from-red-600 to-red-500 px-4 py-2.5 text-white font-semibold shadow-sm transition duration-300 ease-out hover:bg-red-700"
+        className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700/20 bg-slate-900 px-4 py-2.5 text-white font-semibold shadow-sm transition duration-300 ease-out hover:bg-slate-800"
         aria-label="Mở form tư vấn khẩn cấp"
       >
         <Zap className="w-6 h-6" />

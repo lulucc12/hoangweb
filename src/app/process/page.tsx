@@ -107,7 +107,7 @@ export default function ProcessPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Quy Trình Tư Vấn Xử Lý Khủng Hoảng Truyền Thông<br />và Sự Cố Tài Khoản Facebook
           </h1>
-          <p className="text-lg text-primary-200 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-100 max-w-2xl mx-auto">
             Phương pháp ứng phó với các sự cố truyền thông, nội dung tiêu cực và tài khoản bị ảnh hưởng theo tiêu chuẩn nền tảng — minh bạch, có căn cứ pháp lý và phù hợp với từng tình huống.
           </p>
         </div>
@@ -130,12 +130,12 @@ export default function ProcessPage() {
                   Khi sự cố xuất hiện, yếu tố quan trọng nhất là đánh giá nhanh, chuẩn bị hồ sơ và triển khai phương án ứng phó đúng kênh hỗ trợ của nền tảng.
                 </p>
               </div>
-              <div className="rounded-2xl bg-primary-900 p-8 text-white">
+              <div className="rounded-xl border border-[#E2E8F0] bg-white p-8 text-slate-900">
                 <h3 className="text-xl font-bold mb-4">3 bước khôi phục nhanh</h3>
-                <ul className="space-y-4 text-sm text-primary-100">
-                  <li>• Xác minh email/SĐT liên kết và thu thập ảnh giấy tờ.</li>
-                  <li>• Soạn hồ sơ khôi phục theo mẫu Meta, gửi yêu cầu chính thức.</li>
-                  <li>• Theo dõi ticket và bổ sung thông tin khi nền tảng yêu cầu.</li>
+                <ul className="space-y-5 text-sm text-slate-600 list-none">
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-blue-600 first-letter:text-transparent">• Xác minh email/SĐT liên kết và thu thập ảnh giấy tờ.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-blue-600 first-letter:text-transparent">• Soạn hồ sơ khôi phục theo mẫu Meta, gửi yêu cầu chính thức.</li>
+                  <li className="relative pl-5 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-2 before:w-2 before:rounded-full before:bg-blue-600 first-letter:text-transparent">• Theo dõi ticket và bổ sung thông tin khi nền tảng yêu cầu.</li>
                 </ul>
               </div>
             </div>
@@ -167,18 +167,18 @@ export default function ProcessPage() {
                     </div>
 
                     <div className="ml-0 lg:ml-0">
-                      <div className="inline-flex items-center gap-2 bg-neutral-100 px-3 py-1 rounded-full text-sm font-medium text-neutral-600 mb-4">
+                      <div className="inline-flex items-center gap-2 bg-neutral-100 px-3 py-1 rounded-full text-sm font-medium text-neutral-700 mb-4">
                         <Clock className="w-4 h-4" />
                         Thời gian dự kiến: {step.duration}
                       </div>
 
-                      <p className="text-neutral-600 mb-6">{step.description}</p>
+                      <p className="text-neutral-700 mb-6">{step.description}</p>
 
                       <ul className="space-y-3 mb-6">
                         {step.details.map((detail, i) => (
                           <li key={i} className="flex items-start gap-3">
                             <CheckCircle className={`${colors.text} w-5 h-5 mt-0.5 flex-shrink-0`} />
-                            <span className="text-neutral-700">{detail}</span>
+                            <span className="text-neutral-800">{detail}</span>
                           </li>
                         ))}
                       </ul>
@@ -188,7 +188,7 @@ export default function ProcessPage() {
                           <ArrowRight className={`${colors.text} w-4 h-4`} />
                           <span className="font-semibold text-primary-900">Kết quả bước này</span>
                         </div>
-                        <p className="text-neutral-700 text-sm">{step.outcome}</p>
+                        <p className="text-neutral-800 text-sm">{step.outcome}</p>
                       </div>
                     </div>
                   </div>
