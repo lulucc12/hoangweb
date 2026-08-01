@@ -113,7 +113,7 @@ export default function HomePage() {
       <section className="py-24 bg-primary-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-slate-100">
               Giải pháp Khủng hoảng Nhanh - Đúng Quy trình Pháp lý
             </h2>
           </div>
