@@ -1,5 +1,5 @@
 'use client';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { ContactActionLink } from '@/components/ContactActionLink';
 
 export default function StickyBottomBar() {
@@ -9,7 +9,7 @@ export default function StickyBottomBar() {
         📞 Gọi tư vấn
       </ContactActionLink>
       <ContactActionLink action="zalo" source="Sticky Bottom Bar" className="flex-1 flex items-center justify-center gap-2 py-4 text-slate-700 font-medium rounded-none hover:bg-[#F8FAFC] transition-colors">
-        <MessageCircle className="w-4 h-4 text-primary-700" /> 💬 Trao đổi Zalo
+        💬 Trao đổi Zalo
       </ContactActionLink>
     </div>
   );

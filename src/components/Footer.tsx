@@ -6,7 +6,7 @@ import { ContactActionLink } from '@/components/ContactActionLink';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-950 text-white pt-16 pb-8">
+    <footer className="bg-primary-950 text-white pt-16 pb-28 md:pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-primary-800/70 bg-primary-900/60 p-6 mb-10">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
@@ -39,7 +39,6 @@ export default function Footer() {
             </div>
             <p className="text-neutral-400 mb-6 max-w-md">
               Đơn vị tư vấn chuyên nghiệp về xử lý khủng hoảng truyền thông, kiểm soát rủi ro và ứng phó sự cố tài khoản trên môi trường mạng.
-              Chúng tôi cung cấp tư vấn chiến lược, hồ sơ chuyên môn và lộ trình triển khai theo chuẩn mực hoạt động của các tổ chức lớn.
             </p>
             <div className="space-y-3 text-neutral-400">
               <div className="flex items-center gap-2">
@@ -49,10 +48,6 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary-300" />
                 <a href="mailto:hoang.helpmedia@gmail.com" className="hover:text-white transition-colors">hoang.helpmedia@gmail.com</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-primary-300" />
-                <span>Phú Lạc, Đại Từ, Thái Nguyên</span>
               </div>
               <div className="flex items-center gap-2 pt-2">
                 <a
@@ -130,9 +125,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 text-sm text-neutral-400 space-y-2">
-          <p><span className="font-semibold text-neutral-300">Đơn vị vận hành:</span> HOANG NGUYEN CRISIS SHIELD MEDIA</p>
-          <p><span className="font-semibold text-neutral-300">Mã số thuế:</span> 8887207810</p>
+          <p><span className="font-semibold text-neutral-300">Đơn vị vận hành:</span> HKD SỬ LÝ KHỦNG HOẢNG TRUYỀN THÔNG HOÀNG NGUYỄN</p>
+          <p><span className="font-semibold text-neutral-300">Tên viết tắt:</span> HOANG NGUYEN CRISIS SHIELD MEDIA</p>
           <p><span className="font-semibold text-neutral-300">Hình thức hoạt động:</span> Cung cấp dịch vụ trực tuyến trên phạm vi toàn quốc</p>
+          <p><span className="font-semibold text-neutral-300">Mã số thuế:</span> 8887207810</p>
+          <p><span className="font-semibold text-neutral-300">Đại diện:</span> Ông Nguyễn Văn Hoàng</p>
+          <div className="flex items-center gap-2 pt-1">
+            <MapPin className="w-4 h-4 text-primary-300" />
+            <span>Phú Lạc, Thái Nguyên, Việt Nam</span>
+          </div>
         </div>
 
         {/* Maps */}

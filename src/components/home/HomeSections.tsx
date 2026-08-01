@@ -66,6 +66,14 @@ export function HeroSection() {
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-2">Giải pháp xử lý khủng hoảng truyền thông & phục hồi tài khoản Facebook</h1>
           </div>
 
+          <div className="mb-6 rounded-2xl border border-amber-400/20 bg-amber-500/10 p-4 sm:p-5 max-w-2xl">
+            <div className="flex items-start gap-3">
+              <p className="text-sm sm:text-base leading-7 text-primary-100">
+                Hỗ trợ khẩn cấp cho các trường hợp phát sinh đột ngột, phù hợp cho khách hàng cá nhân và doanh nghiệp cần phản ứng nhanh với sự cố tài khoản hoặc nội dung tiêu cực.
+              </p>
+            </div>
+          </div>
+
           <div className="grid gap-4 max-w-2xl mb-6 sm:grid-cols-3">
             <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
               Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền

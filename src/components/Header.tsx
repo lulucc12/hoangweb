@@ -28,12 +28,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 hover:opacity-95 transition-opacity">
-            <div className="w-10 h-10 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 bg-primary-900 rounded-xl flex items-center justify-center flex-shrink-0">
               <Shield className="w-5 h-5 text-white" />
             </div>
             <div className="flex flex-col min-w-0">
-              <div className="text-base sm:text-base font-semibold text-primary-900 leading-tight tracking-tight antialiased">CRISIS SHIELD</div>
-              <div className="text-[10px] sm:text-[11px] text-neutral-500 whitespace-nowrap">Xử Lý Khủng Hoảng Truyền Thông</div>
+              <div className="text-base sm:text-lg font-semibold text-neutral-950 leading-tight tracking-[0.01em] antialiased">CRISIS SHIELD</div>
+              <div className="text-[10px] sm:text-[11px] uppercase text-neutral-500 tracking-[0.18em] whitespace-nowrap">Xử lý khủng hoảng truyền thông</div>
             </div>
           </Link>
 
@@ -45,8 +45,8 @@ export default function Header() {
                 href={item.href}
                 className={`font-medium transition-colors duration-150 py-2 px-1 ${
                   currentPage === item.id
-                    ? 'text-primary-900 border-b-2 border-primary-700'
-                    : 'text-neutral-600 hover:text-primary-800'
+                    ? 'text-primary-900 border-b-2 border-primary-800'
+                    : 'text-neutral-700 hover:text-primary-800'
                 }`}
               >
                 {item.label}
@@ -58,11 +58,11 @@ export default function Header() {
           <div className="relative hidden md:block">
             <button
               onClick={() => setShowEmergency(!showEmergency)}
-              className="btn-emergency inline-flex items-center gap-2 rounded-lg border border-[#E2E8F0] bg-white px-4 py-2.5 font-medium text-neutral-700 shadow-sm transition-colors duration-150 hover:bg-primary-50"
+              className="btn-emergency inline-flex items-center gap-2 rounded-xl bg-primary-900 px-4 py-2.5 font-semibold text-white shadow-[0_12px_30px_rgba(33,57,87,0.12)] transition duration-150 hover:bg-primary-950 focus-visible:ring-primary-500 focus-visible:ring-2"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-5 h-5 text-white" />
               TƯ VẤN KHẨN CẤP
-              <ChevronDown className="w-4 h-4" />
+              <ChevronDown className="w-4 h-4 text-white" />
             </button>
 
             {showEmergency && (
@@ -98,7 +98,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden inline-flex rounded-lg border border-[#E2E8F0] p-2.5 text-neutral-600 transition-colors duration-150 ease-out hover:bg-neutral-50 hover:text-primary-700"
+            className="lg:hidden relative z-[70] inline-flex rounded-xl bg-primary-900 border border-primary-900 p-2.5 text-white shadow-[0_12px_30px_rgba(33,57,87,0.12)] transition duration-150 ease-out hover:bg-primary-800 pointer-events-auto"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" rx="32" fill="#0f172a" />
+  <rect x="60" y="60" width="1080" height="510" rx="28" fill="#111827" stroke="#1d4ed8" stroke-width="3" />
+  <circle cx="270" cy="315" r="132" fill="#1d4ed8" opacity="0.95" />
+  <path d="M212 274h116c24 0 44 20 44 44s-20 44-44 44H212z" fill="#ffffff" />
+  <path d="M212 186h120c42 0 76 34 76 76s-34 76-76 76H212z" fill="#f8fafc" opacity="0.9" />
+  <text x="420" y="282" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">Crisis Shield</text>
+  <text x="420" y="346" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="32">Tư vấn khủng hoảng truyền thông &amp; bảo vệ danh tiếng</text>
+  <text x="420" y="402" fill="#93c5fd" font-family="Segoe UI, Arial, sans-serif" font-size="28">Khôi phục tài khoản • Khiếu nại nội dung • Quản trị rủi ro</text>
+</svg>

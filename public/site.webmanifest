@@ -1,0 +1,16 @@
+{
+  "name": "Crisis Shield",
+  "short_name": "Crisis Shield",
+  "description": "Tư vấn khủng hoảng truyền thông, hỗ trợ khôi phục tài khoản Facebook và bảo vệ danh tiếng doanh nghiệp.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/globe.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
