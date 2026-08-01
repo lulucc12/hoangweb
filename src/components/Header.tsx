@@ -66,13 +66,13 @@ export default function Header() {
             </button>
 
             {showEmergency && (
-              <div className="absolute right-0 mt-2 w-72 bg-white rounded-lg shadow-[0_2px_12px_rgba(15,23,42,0.05)] border border-[#E2E8F0] p-4 z-50">
-                <div className="text-center mb-4">
-                  <div className="text-sm text-red-600 font-medium mb-2">Hotline 24/7</div>
+              <div className="absolute right-0 mt-2 w-72 bg-white rounded-xl shadow-[0_2px_10px_rgba(15,23,42,0.04)] border border-[#E2E8F0] p-6 z-50">
+                <div className="text-center mb-6">
+                  <div className="text-sm text-slate-500 font-medium mb-4">Hotline 24/7</div>
                   <ContactActionLink
                     action="call"
                     source="Header dropdown"
-                    className="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-semibold leading-none border border-[#E2E8F0] bg-white text-xl font-bold text-red-600 mb-3 hover:bg-red-50 transition-colors duration-150 block"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-medium leading-none border border-[#E2E8F0] bg-white text-xl text-slate-900 mb-3 hover:border-primary-600 hover:text-primary-700 transition-colors duration-150 block"
                   >
                     0877 852 153
                   </ContactActionLink>
@@ -80,9 +80,9 @@ export default function Header() {
                 <ContactActionLink
                   action="zalo"
                   source="Header dropdown"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-medium text-white bg-primary-600 shadow-sm transition-colors duration-150 hover:bg-primary-500 w-full"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-medium text-white bg-primary-700 transition-colors duration-150 hover:bg-primary-800 w-full"
                 >
-                  <MessageCircle className="w-5 h-5" />
+                  <MessageCircle className="w-5 h-5 text-primary-700" />
                   Nhắn tin Zalo ngay
                 </ContactActionLink>
                 <button
@@ -126,21 +126,21 @@ export default function Header() {
 
             {/* Mobile Emergency */}
             <div className="mt-4 pt-4 border-t border-[#E2E8F0]">
-              <div className="bg-white rounded-lg p-4 text-center shadow-[0_2px_12px_rgba(15,23,42,0.05)] border border-[#E2E8F0]">
-                <div className="text-sm text-red-600 font-medium mb-2">Hotline 24/7</div>
+              <div className="bg-white rounded-xl p-6 text-center shadow-[0_2px_10px_rgba(15,23,42,0.04)] border border-[#E2E8F0]">
+                <div className="text-sm text-slate-500 font-medium mb-4">Hotline 24/7</div>
                 <ContactActionLink
                   action="call"
                   source="Header mobile"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-semibold leading-none border border-[#E2E8F0] bg-white text-xl font-bold text-red-600 block mb-3 hover:bg-red-50 transition-colors duration-150"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-medium leading-none border border-[#E2E8F0] bg-white text-xl text-slate-900 block mb-3 hover:border-primary-600 hover:text-primary-700 transition-colors duration-150"
                 >
                   0877 852 153
                 </ContactActionLink>
                 <ContactActionLink
                   action="zalo"
                   source="Header mobile"
-                  className="flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-4 py-2.5 font-medium text-white shadow-sm transition-colors hover:bg-primary-500 w-full"
+                  className="flex items-center justify-center gap-2 rounded-lg bg-primary-700 px-4 py-2.5 font-medium text-white transition-colors hover:bg-primary-800 w-full"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <MessageCircle className="w-4 h-4 text-primary-700" />
                   Nhắn tin Zalo
                 </ContactActionLink>
               </div>
