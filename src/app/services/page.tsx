@@ -202,7 +202,6 @@ export default function ServicesPage() {
               source="Services CTA"
               className="inline-flex items-center justify-center gap-2 bg-white text-red-600 font-bold px-8 py-4 rounded-xl text-lg hover:bg-red-50 transition-colors"
             >
-              <Phone className="w-6 h-6" />
               Gọi: 0877 852 153
             </ContactActionLink>
             <ContactActionLink

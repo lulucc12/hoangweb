@@ -235,7 +235,6 @@ export default function EmergencyConsultForm() {
               source="Emergency Form"
               className="flex items-center gap-2 text-red-600 font-semibold hover:text-red-700"
             >
-              <Phone className="w-5 h-5" />
               Gọi: 0877 852 153
             </ContactActionLink>
             <ContactActionLink
