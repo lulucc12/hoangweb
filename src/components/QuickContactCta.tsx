@@ -16,7 +16,7 @@ export default function QuickContactCta() {
             <h2 className="mb-4 text-2xl font-semibold leading-tight md:text-3xl text-white">
               Cần hỗ trợ đánh giá và ứng phó với tình huống truyền thông ngay từ giai đoạn đầu?
             </h2>
-            <p className="max-w-xl text-base leading-7 text-primary-100/90">
+            <p className="max-w-xl text-base leading-7 text-primary-100/70">
               Liên hệ hotline hoặc Zalo để nhận tư vấn về phương án xử lý, hồ sơ bằng chứng và lộ trình triển khai phù hợp với từng trường hợp.
             </p>
           </div>
