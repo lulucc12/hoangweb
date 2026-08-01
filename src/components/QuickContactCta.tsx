@@ -13,7 +13,7 @@ export default function QuickContactCta() {
             <p className="mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.35em] text-primary-100/90">
               Tư vấn chuyên nghiệp
             </p>
-            <h2 className="mb-4 text-2xl font-semibold leading-tight md:text-3xl">
+            <h2 className="mb-4 text-2xl font-semibold leading-tight md:text-3xl text-white">
               Cần hỗ trợ đánh giá và ứng phó với tình huống truyền thông ngay từ giai đoạn đầu?
             </h2>
             <p className="max-w-xl text-base leading-7 text-primary-100/90">
