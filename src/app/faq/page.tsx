@@ -51,8 +51,8 @@ const faqs = [
 
 export default function FAQPage() {
   return (
-    <div className="bg-white">
-      <section className="bg-primary-900 py-16 text-white text-center">
+    <div className="bg-neutral-50">
+      <section className="bg-primary-900 py-20 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">FAQ - Câu hỏi thường gặp</h1>
           <p className="text-base sm:text-lg text-primary-200">
@@ -61,8 +61,8 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.45fr]">
+      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[1fr_0.45fr]">
           <div className="space-y-6">
             {faqs.map((item) => (
               <div key={item.question} className="rounded-3xl border border-neutral-200 p-6 shadow-sm bg-white">
@@ -77,7 +77,7 @@ export default function FAQPage() {
             ))}
           </div>
 
-          <aside className="rounded-3xl border border-primary-100 bg-primary-50 p-6">
+          <aside className="rounded-3xl border border-neutral-200 bg-neutral-50 p-6">
             <div className="mb-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-4 py-2 text-sm font-semibold text-primary-900 mb-3">
                 <Shield className="w-4 h-4" />
@@ -124,7 +124,7 @@ export default function FAQPage() {
               </p>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center w-full rounded-xl bg-primary-800 text-white py-3 text-sm font-semibold hover:bg-primary-700 transition-colors"
+                className="inline-flex w-full items-center justify-center rounded-2xl bg-primary-800 px-5 py-3.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(2,6,23,0.12)] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-primary-700 hover:shadow-[0_16px_36px_rgba(2,6,23,0.16)]"
               >
                 Đến trang liên hệ
               </a>

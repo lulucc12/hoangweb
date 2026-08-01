@@ -52,42 +52,42 @@ const platforms = ['Mạng xã hội', 'Công cụ tìm kiếm', 'Diễn đàn',
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-primary-900 via-primary-800 to-primary-950 flex items-center pt-0">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-primary-900 to-primary-800 flex items-center pt-0">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-20 blur-sm"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 bg-white/5 text-primary-100 px-4 py-2 rounded-full text-sm font-semibold mb-8">
+            <span className="w-2 h-2 bg-green-300 rounded-full"></span>
             Tư vấn khủng hoảng truyền thông chuyên nghiệp
           </div>
 
-          <div className="mb-6 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-sm p-4 sm:p-5 w-fit">
-            <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-primary-200 mb-2">Giải pháp xử lý khủng hoảng truyền thông & phục hồi tài khoản Facebook</h1>
+          <div className="mb-6 rounded-2xl border border-white/10 bg-transparent p-4 sm:p-6 w-fit">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-2">Giải pháp xử lý khủng hoảng truyền thông & phục hồi tài khoản Facebook</h1>
           </div>
 
-          <div className="grid gap-3 max-w-2xl mb-6 sm:grid-cols-3">
-            <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90">
+          <div className="grid gap-4 max-w-2xl mb-6 sm:grid-cols-3">
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
               Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền
             </div>
-            <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90">
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
               Loại bỏ nội dung tiêu cực với cách tiếp cận thận trọng
             </div>
-            <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90">
+            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
               Quy trình pháp lý minh bạch, an toàn và có kiểm soát
             </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-8 bg-green-500/10 border border-green-500/30 w-fit px-4 py-2 rounded-lg">
-            <CheckCircle className="w-5 h-5 text-green-400" />
-            <span className="text-green-300 font-medium">Đề xuất phương án chuyên môn, kèm hồ sơ và lộ trình thực hiện rõ ràng</span>
+          <div className="flex items-center gap-2 mb-8 bg-white/5 border border-green-500/20 w-fit px-4 py-2 rounded-lg">
+            <CheckCircle className="w-5 h-5 text-green-300" />
+            <span className="text-primary-100 font-medium">Đề xuất phương án chuyên môn, kèm hồ sơ và lộ trình thực hiện rõ ràng</span>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 mb-12">
+          <div className="grid grid-cols-2 gap-5 mb-12">
             <ContactActionLink
               action="call"
               source="Hero CTA"
-              className="flex flex-col items-center justify-center gap-1 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-bold p-5 rounded-2xl transition-all shadow-[0_0_20px_rgba(220,38,38,0.4)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]"
+              className="flex-col gap-1 bg-gradient-to-r from-primary-700 to-primary-600 hover:from-primary-600 hover:to-primary-500 text-white p-5 shadow-sm hover:shadow-md border border-primary-700"
             >
               <Phone className="w-6 h-6" />
               <span className="text-xs">GỌI TƯ VẤN 24/7</span>
@@ -96,9 +96,9 @@ export function HeroSection() {
             <ContactActionLink
               action="zalo"
               source="Hero CTA"
-              className="flex flex-col items-center justify-center gap-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-semibold p-5 rounded-2xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]"
+              className="flex-col gap-1 bg-white text-primary-900 p-5 shadow-sm hover:shadow-md border border-neutral-200"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-6 h-6" />
               <span className="text-xs">NHẮN TIN ZALO</span>
               <span className="text-lg">TƯ VẤN NGAY</span>
             </ContactActionLink>
@@ -107,7 +107,7 @@ export function HeroSection() {
           <Disclaimer />
           <EmergencyConsultForm />
 
-          <div className="flex flex-wrap gap-6 text-neutral-400 text-sm mt-8">
+          <div className="flex flex-wrap gap-8 text-neutral-400 text-sm mt-8">
             <div className="flex items-center gap-2">
               <FileText className="w-5 h-5 text-green-400" />
               <span>Chuẩn bị hồ sơ, bằng chứng và phương án tư vấn phù hợp với từng tình huống</span>
@@ -128,8 +128,8 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronRight className="w-8 h-8 text-white/50 rotate-90" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <ChevronRight className="w-8 h-8 text-white/30 rotate-90" />
       </div>
     </section>
   );
@@ -137,10 +137,10 @@ export function HeroSection() {
 
 export function ContractInvoiceSection() {
   return (
-    <section className="py-16 bg-primary-50">
+    <section className="py-16 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[2.5rem] border border-primary-200 bg-white p-8 md:p-10 shadow-sm">
-          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] items-center">
+        <div className="rounded-xl border border-neutral-200/80 bg-white/95 p-8 md:p-10 shadow-[0_12px_40px_rgba(15,23,42,0.05)]">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
                 <Shield className="w-4 h-4" />
@@ -158,7 +158,7 @@ export function ContractInvoiceSection() {
                 <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Theo dõi tiến độ và cập nhật khách hàng một cách rõ ràng.</li>
               </ul>
             </div>
-            <div className="rounded-3xl border border-primary-100 bg-primary-900 p-8 text-white shadow-lg">
+            <div className="rounded-xl border border-primary-100 bg-primary-900 p-8 text-white shadow-sm">
               <div className="text-sm uppercase tracking-[0.24em] text-primary-200 font-semibold mb-4">Quy trình tư vấn</div>
               <div className="space-y-4 text-sm text-primary-100">
                 <div className="rounded-3xl bg-white/5 p-4">
@@ -184,10 +184,10 @@ export function ContractInvoiceSection() {
 
 export function ServiceFocusSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-primary-100 bg-gradient-to-br from-primary-50 to-white p-8 md:p-10 shadow-sm">
-          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+        <div className="rounded-xl border border-slate-200 bg-white p-10 md:p-12 shadow-subtle">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
                 <Shield className="w-4 h-4" />
@@ -215,10 +215,10 @@ export function ServiceFocusSection() {
 
 export function TrustSection() {
   return (
-    <section className="py-20 bg-neutral-50">
+    <section className="py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-primary-100 bg-white p-8 md:p-10 shadow-sm">
-          <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-center">
+        <div className="rounded-xl border border-primary-100 bg-white p-10 md:p-12 shadow-sm">
+          <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
                 <Shield className="w-4 h-4" />
@@ -249,31 +249,31 @@ export function TrustSection() {
 
 export function SolutionsSection() {
   return (
-    <section className="py-20 bg-neutral-50">
+    <section className="py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Giải pháp nghiệp vụ theo từng tình huống</h2>
           <p className="text-base md:text-lg text-neutral-600">
             Các phương án được xây dựng phù hợp với quy trình xử lý và mục tiêu bảo vệ danh tiếng, tài sản số và uy tín tổ chức.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-stretch">
           {solutionCards.map(({ title, description, icon: Icon, accent }) => (
-            <div key={title} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-neutral-100 h-full flex flex-col">
-              <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 flex-shrink-0 ${
+            <div key={title} className="bg-white rounded-2xl p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:shadow-[0_16px_40px_rgba(15,23,42,0.08)] transition-all border border-neutral-200/80 h-full flex flex-col">
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 flex-shrink-0 ${
                 accent === 'blue' ? 'bg-blue-100' :
                 accent === 'purple' ? 'bg-purple-100' :
                 accent === 'green' ? 'bg-green-100' : 'bg-orange-100'
               }`}>
-                <Icon className={`w-7 h-7 ${
+                <Icon className={`w-6 h-6 ${
                   accent === 'blue' ? 'text-blue-600' :
                   accent === 'purple' ? 'text-purple-600' :
                   accent === 'green' ? 'text-green-600' : 'text-orange-600'
                 }`} />
               </div>
-              <h3 className="text-lg font-bold text-primary-900 mb-3">{title}</h3>
-              <p className="text-neutral-600 text-sm flex-1">{description}</p>
+              <h3 className="text-lg font-semibold text-primary-900 mb-3">{title}</h3>
+              <p className="text-neutral-600 text-sm flex-1 leading-relaxed">{description}</p>
             </div>
           ))}
         </div>
@@ -284,17 +284,17 @@ export function SolutionsSection() {
 
 export function PlatformsSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Các kênh và nền tảng hỗ trợ triển khai</h2>
           <p className="text-sm md:text-base text-neutral-600 max-w-2xl mx-auto">
             Hỗ trợ khiếu nại, khôi phục và giám sát trên các nền tảng chính của mạng xã hội, tìm kiếm và tin tức.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-stretch">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-stretch">
           {platforms.map((platform) => (
-            <div key={platform} className="bg-white rounded-xl p-6 text-center border border-neutral-200 hover:border-primary-300 hover:shadow-lg transition-all h-full flex items-center justify-center">
+            <div key={platform} className="bg-white rounded-xl p-6 text-center border border-neutral-200 shadow-[0_8px_24px_rgba(15,23,42,0.04)] hover:border-primary-300 hover:shadow-[0_12px_32px_rgba(15,23,42,0.08)] transition-all h-full flex items-center justify-center">
               <div className="font-semibold text-primary-900">{platform}</div>
             </div>
           ))}

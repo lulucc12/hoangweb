@@ -79,10 +79,10 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="bg-white pt-20">
-      <section className="bg-gradient-to-br from-primary-800 to-primary-900 py-16">
+    <div className="bg-neutral-50 pt-20">
+      <section className="bg-gradient-to-br from-primary-800 to-primary-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Tư vấn Khủng Hoảng Truyền Thông & Xử Lý Sự Cố Tài Khoản Facebook
           </h1>
           <p className="text-lg text-primary-200 max-w-2xl mx-auto">
@@ -92,16 +92,16 @@ export default function ServicesPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Disclaimer />
         </div>
       </section>
 
-      <section className="py-16 bg-primary-50/50">
+      <section className="py-16 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl border border-primary-200 bg-white p-8 md:p-10 shadow-sm">
-            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 md:p-10 shadow-subtle">
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
               <div>
                 <div className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
                   <Shield className="w-4 h-4" />
@@ -117,9 +117,9 @@ export default function ServicesPage() {
                   <li className="flex items-start gap-2"><Check className="w-5 h-5 text-green-500 mt-0.5" />Hỗ trợ chuẩn bị thông tin cần thiết để tăng khả năng kiểm soát và phục hồi hiệu quả.</li>
                 </ul>
               </div>
-              <div className="rounded-2xl bg-primary-900 p-6 text-white">
+              <div className="rounded-2xl bg-primary-900 p-8 text-white">
                 <h3 className="text-xl font-bold mb-4">Thông tin nên chuẩn bị</h3>
-                <ul className="space-y-2 text-sm text-primary-100">
+                <ul className="space-y-3 text-sm text-primary-100">
                   <li>• Email hoặc số điện thoại liên kết với tài khoản</li>
                   <li>• Ảnh CCCD/CMND hoặc giấy tờ xác minh danh tính</li>
                   <li>• Màn hình lỗi đăng nhập, thông báo khóa hoặc cảnh báo bảo mật</li>
@@ -131,12 +131,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-primary-900">Quy trình Nghiệp vụ Theo Nền Tảng</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-14 text-primary-900">Quy trình Nghiệp vụ Theo Nền Tảng</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {platformProcedures.map((procedure) => (
-              <div key={procedure.platform} className="bg-white rounded-2xl border border-neutral-200 p-6 hover:shadow-lg transition-shadow">
+              <div key={procedure.platform} className="bg-white rounded-2xl border border-neutral-200/80 p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:shadow-[0_16px_40px_rgba(15,23,42,0.08)] transition-all">
                 <h3 className="text-xl font-bold text-primary-900 mb-4">{procedure.platform}</h3>
                 <ul className="space-y-2 mb-4">
                   {procedure.measures.map((measure, i) => (
@@ -155,12 +155,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-neutral-50">
+      <section className="py-20 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-primary-900">Gói Giải pháp Tư vấn</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-center mb-14 text-primary-900">Gói Giải pháp Tư vấn</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {packages.map((pkg) => (
-              <div key={pkg.name} className={`bg-white rounded-2xl p-8 border border-neutral-200 shadow-lg ${pkg.highlight ? 'ring-2 ring-primary-500 relative' : ''}`}>
+              <div key={pkg.name} className={`bg-white rounded-2xl p-8 border border-neutral-200/80 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all ${pkg.highlight ? 'ring-1 ring-primary-200 relative' : ''}`}>
                 {pkg.highlight && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     Phổ biến nhất
@@ -183,12 +183,12 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-10">
+      <section className="py-16">
         <QuickContactCta />
       </section>
 
       {/* CTA Liên hệ Đồng bộ */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Cần Tư vấn Quản trị Danh tiếng?

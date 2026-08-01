@@ -8,13 +8,13 @@ import ConsultationRequestForm from '@/components/ConsultationRequestForm';
 export default function ContactPage() {
 
   return (
-    <div className="bg-white pt-20">
-      <section className="bg-primary-900 py-16 text-white text-center">
+    <div className="bg-neutral-50 pt-24 pb-24">
+      <section className="bg-primary-900 py-20 text-white text-center">
         <h1 className="text-4xl font-bold mb-4">Liên Hệ Tư Vấn Quản Trị Rủi Ro Truyền Thông & Khôi Phục Tài Khoản</h1>
         <p className="text-primary-200">Chúng tôi sẵn sàng hỗ trợ doanh nghiệp, tổ chức và cá nhân trong các tình huống liên quan đến tài khoản, nội dung mạng xã hội và các rủi ro phát sinh trên môi trường trực tuyến.</p>
       </section>
 
-      <section className="py-16 max-w-7xl mx-auto px-4">
+      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Disclaimer />
 
         <div className="mt-8">
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-            <div className="rounded-2xl border border-primary-100 bg-primary-50 p-6">
+            <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
               <h3 className="font-semibold text-primary-900 mb-2">Các tình huống thường gặp</h3>
               <ul className="space-y-2 text-sm text-primary-800">
                 <li>• Khôi phục tài khoản Facebook bị khóa, bị hack hoặc bị chiếm quyền</li>

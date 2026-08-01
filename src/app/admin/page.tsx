@@ -27,7 +27,7 @@ export default function AdminPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-slate-50 px-4 py-10 text-slate-900">
+    <main className="min-h-screen bg-neutral-50 px-4 py-10 text-slate-900">
       <div className="mx-auto max-w-5xl">
         <h1 className="text-3xl font-bold mb-2">Admin - Hoạt động tư vấn</h1>
         <p className="text-slate-600 mb-6">Xem toàn bộ lịch sử yêu cầu tư vấn và các sự kiện ghi nhận.</p>
@@ -38,7 +38,7 @@ export default function AdminPage() {
           ) : (
             <div className="space-y-3">
               {items.map((item) => (
-                <div key={item.id} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <div key={item.id} className="rounded-2xl border border-slate-200 bg-neutral-50 p-4">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h2 className="font-semibold text-slate-900">{item.title}</h2>
                     <span className="text-sm text-slate-500">{formatTime(item.createdAt)}</span>

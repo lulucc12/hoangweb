@@ -23,33 +23,33 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-[60] pointer-events-auto bg-white/95 backdrop-blur-sm shadow-md">
-      <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-6">
-        <div className="flex items-center justify-between h-14 sm:h-15">
+    <header className="fixed top-0 left-0 right-0 z-[60] pointer-events-auto bg-white/90 backdrop-blur-md border-b border-neutral-100 shadow-sm transition-colors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-95 transition-opacity"
           >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
-              <Shield className="w-4 h-4 sm:w-4 sm:h-4 text-white" />
+            <div className="w-9 h-9 bg-primary-800 rounded-lg flex items-center justify-center flex-shrink-0">
+              <Shield className="w-4 h-4 text-white" />
             </div>
             <div className="flex flex-col min-w-0">
-              <div className="text-[13px] sm:text-[15px] font-bold text-primary-900 leading-none">CRISIS SHIELD</div>
-              <div className="text-[8px] sm:text-[9px] text-neutral-500 whitespace-nowrap">Xử Lý Khủng Hoảng Truyền Thông</div>
+              <div className="text-sm sm:text-base font-semibold text-primary-900 leading-tight">CRISIS SHIELD</div>
+              <div className="text-[10px] sm:text-[11px] text-neutral-500 whitespace-nowrap">Xử Lý Khủng Hoảng Truyền Thông</div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.id}
                 href={item.href}
-                className={`font-medium transition-colors ${
+                className={`font-semibold transition-colors py-2 px-1 ${
                   currentPage === item.id
-                    ? 'text-primary-800 border-b-2 border-primary-800'
-                    : 'text-neutral-600 hover:text-primary-800'
+                    ? 'text-primary-900 border-b-2 border-primary-700'
+                    : 'text-neutral-600 hover:text-primary-900 hover:underline hover:underline-offset-4'
                 }`}
               >
                 {item.label}
@@ -61,7 +61,7 @@ export default function Header() {
           <div className="relative hidden md:block">
             <button
               onClick={() => setShowEmergency(!showEmergency)}
-              className="btn-emergency flex items-center gap-2"
+              className="btn-emergency inline-flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-2.5 font-semibold text-neutral-700 shadow-sm transition duration-200 ease-out hover:bg-primary-50 hover:shadow-md"
             >
               <Phone className="w-5 h-5" />
               TƯ VẤN KHẨN CẤP
@@ -69,7 +69,7 @@ export default function Header() {
             </button>
 
             {showEmergency && (
-              <div className="absolute right-0 mt-2 w-72 bg-white rounded-xl shadow-2xl border border-neutral-200 p-4 z-50">
+              <div className="absolute right-0 mt-2 w-72 bg-white rounded-xl shadow-lg border border-neutral-100 p-4 z-50">
                 <div className="text-center mb-4">
                   <div className="text-sm text-neutral-500 mb-1">Hotline 24/7</div>
                   <ContactActionLink
@@ -83,7 +83,7 @@ export default function Header() {
                 <ContactActionLink
                   action="zalo"
                   source="Header dropdown"
-                  className="flex items-center justify-center gap-2 w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 font-semibold text-white shadow-sm transition duration-200 ease-out hover:bg-blue-500 hover:shadow-md"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Nhắn tin Zalo ngay
@@ -101,7 +101,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-neutral-600 hover:text-primary-800"
+            className="lg:hidden inline-flex rounded-xl border border-neutral-200 p-2.5 text-neutral-600 transition duration-200 ease-out hover:bg-neutral-50 hover:text-primary-700"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -109,7 +109,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden pb-4 border-t border-neutral-200">
+          <div className="lg:hidden pb-4 border-t border-neutral-100">
             <nav className="flex flex-col gap-2 pt-4">
               {navItems.map((item) => (
                 <Link
@@ -118,8 +118,8 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   className={`text-left px-4 py-2 rounded-lg font-medium transition-colors ${
                     currentPage === item.id
-                      ? 'bg-primary-100 text-primary-800'
-                      : 'text-neutral-600 hover:bg-neutral-100'
+                      ? 'bg-primary-50 text-primary-800'
+                      : 'text-neutral-700 hover:bg-neutral-100'
                   }`}
                 >
                   {item.label}
@@ -128,7 +128,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile Emergency */}
-            <div className="mt-4 pt-4 border-t border-neutral-200">
+            <div className="mt-4 pt-4 border-t border-neutral-100">
               <div className="bg-red-50 rounded-xl p-4 text-center">
                 <div className="text-sm text-red-600 font-medium mb-2">Hotline 24/7</div>
                 <ContactActionLink
@@ -141,7 +141,7 @@ export default function Header() {
                 <ContactActionLink
                   action="zalo"
                   source="Header mobile"
-                  className="flex items-center justify-center gap-2 bg-blue-500 text-white py-2 px-4 rounded-lg font-medium"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 font-semibold text-white shadow-sm transition duration-200 ease-out hover:bg-blue-500 hover:shadow-md"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Nhắn tin Zalo

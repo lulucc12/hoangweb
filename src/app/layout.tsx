@@ -50,7 +50,7 @@ export default function RootLayout({
         <JsonLd />
         <GoogleTag />
       </head>
-      <body className="min-h-full flex flex-col bg-white">
+      <body className="min-h-full flex flex-col bg-neutral-50">
         <Header />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />

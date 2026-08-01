@@ -3,10 +3,10 @@ import QuickContactCta from '@/components/QuickContactCta';
 
 export default function TermsPage() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 text-neutral-800">
+    <div className="max-w-4xl mx-auto px-6 py-20 text-neutral-800">
       <h1 className="text-3xl font-bold mb-8">Điều khoản hợp tác</h1>
       
-      <div className="prose prose-neutral max-w-none">
+      <div className="prose prose-neutral max-w-none space-y-8">
         <p className="lead text-lg mb-8">Crisis Shield hướng tới sự minh bạch và chuyên nghiệp. Dưới đây là các nguyên tắc hợp tác giúp chúng ta làm việc hiệu quả và tin tưởng lẫn nhau.</p>
 
         <h3>1. Về dịch vụ của chúng tôi</h3>

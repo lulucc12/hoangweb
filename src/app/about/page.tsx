@@ -40,10 +40,10 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen py-20">
+    <div className="bg-neutral-50 min-h-screen py-24">
       <div className="max-w-6xl mx-auto px-6">
-        <section className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 mb-16 items-start">
-          <div className="rounded-[2rem] border border-primary-100 bg-gradient-to-br from-primary-50 to-white p-8 shadow-sm">
+        <section className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 mb-20 items-start">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-subtle">
             <div className="flex flex-col sm:flex-row items-start gap-6 mb-6">
               <img
                 src="/hoangnguyen_n.jpg"
@@ -60,7 +60,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 gap-5">
               <div className="rounded-2xl bg-white p-4 border border-neutral-200">
                 <div className="text-sm font-semibold text-primary-900 mb-1">Phạm vi hoạt động</div>
                 <div className="text-sm text-neutral-600">Khôi phục tài khoản Facebook, khiếu nại nội dung vi phạm, quản trị rủi ro truyền thông.</div>
@@ -72,7 +72,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-primary-100 bg-primary-900 p-8 text-white shadow-sm">
+          <div className="rounded-[2rem] border border-primary-800/60 bg-primary-900 p-8 text-white shadow-[0_12px_40px_rgba(15,23,42,0.16)]">
             <h2 className="text-xl font-semibold mb-4">Điều khách hàng nên biết trước khi hợp tác</h2>
             <ul className="space-y-3 text-sm text-primary-100">
               <li className="flex items-start gap-2">
@@ -91,16 +91,16 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           {stats.map((s, i) => (
-            <div key={i} className="p-4 bg-neutral-50 rounded-xl text-center border border-neutral-200">
+            <div key={i} className="p-6 bg-white rounded-2xl text-center border border-neutral-200 shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
               <div className="text-xl font-bold text-primary-900">{s.value}</div>
               <div className="text-xs text-neutral-500 uppercase mt-1">{s.label}</div>
             </div>
           ))}
         </section>
 
-        <section className="rounded-3xl border border-neutral-200 bg-neutral-50 p-8 shadow-sm mb-16">
+        <section className="rounded-[2rem] border border-neutral-200/80 bg-neutral-50/80 p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)] mb-20">
           <h2 className="text-2xl font-bold text-neutral-900 mb-4">Kinh nghiệm thực tế</h2>
           <p className="text-neutral-700 leading-relaxed mb-4">
             Chúng tôi đã đồng hành với nhiều trường hợp liên quan đến khôi phục quyền truy cập, xử lý nội dung vi phạm, quản trị rủi ro truyền thông và xây dựng hồ sơ khiếu nại theo hướng có căn cứ, rõ mục tiêu và dễ theo dõi.
@@ -121,8 +121,8 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="grid lg:grid-cols-2 gap-8 mb-16">
-          <div className="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm">
+        <section className="grid lg:grid-cols-2 gap-10 mb-20">
+          <div className="rounded-[2rem] border border-neutral-200/80 bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
             <h2 className="text-2xl font-bold text-neutral-900 mb-6">Dịch vụ trọng tâm</h2>
             <ul className="space-y-3 text-neutral-700">
               <li className="flex items-start gap-2">
@@ -140,7 +140,7 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          <div className="rounded-3xl border border-neutral-200 bg-neutral-50 p-8 shadow-sm">
+          <div className="rounded-[2rem] border border-neutral-200/80 bg-neutral-50/80 p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
             <h2 className="text-2xl font-bold text-neutral-900 mb-6">Điểm khác biệt</h2>
             <div className="space-y-4">
               {highlights.map((item, i) => (
@@ -156,7 +156,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-neutral-900 mb-6">Quy trình làm việc minh bạch</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {methodology.map((m, i) => (
-              <div key={i} className="p-4 border border-neutral-200 rounded-2xl bg-white shadow-sm">
+              <div key={i} className="p-5 border border-neutral-200/80 rounded-2xl bg-white shadow-[0_8px_24px_rgba(15,23,42,0.04)]">
                 <div className="font-semibold text-primary-900 mb-2">{m.title}</div>
                 <div className="text-sm text-neutral-600">{m.desc}</div>
               </div>
@@ -164,28 +164,31 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm mb-16">
-          <h2 className="text-2xl font-bold text-neutral-900 mb-6">Cam kết với khách hàng</h2>
-          <div className="space-y-3">
+        <section className="rounded-[2rem] border border-neutral-200/80 bg-neutral-50/80 p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)] mb-16">
+          <h2 className="text-2xl font-semibold text-neutral-900 mb-6">Cam kết với khách hàng</h2>
+          <div className="space-y-4">
             {commitments.map((item, i) => (
-              <div key={i} className="flex items-start gap-2 text-neutral-700">
-                <CheckCircle className="w-5 h-5 text-primary-700 mt-0.5 flex-shrink-0" />
-                <span>{item}</span>
+              <div key={i} className="flex items-start gap-3 text-neutral-700">
+                <CheckCircle className="w-4 h-4 text-primary-700 mt-0.5 flex-shrink-0" />
+                <span className="leading-relaxed">{item}</span>
               </div>
             ))}
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-neutral-900 mb-6">Câu hỏi thường gặp</h2>
-          <div className="space-y-4">
+          <h2 className="text-2xl font-semibold text-neutral-900 mb-6">Câu hỏi thường gặp</h2>
+          <div className="rounded-2xl border border-neutral-100 bg-white p-2 shadow-sm">
             {faqs.map((f, i) => (
-              <div key={i} className="border-b border-neutral-200 pb-4">
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="flex justify-between w-full font-medium text-left text-neutral-900">
-                  {f.q}
-                  <ChevronDown className="w-4 h-4 text-neutral-500" />
+              <div key={i} className={`border-b border-neutral-100 ${i === faqs.length - 1 ? 'border-b-0' : ''}`}>
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left text-neutral-900 transition-colors hover:bg-neutral-50"
+                >
+                  <span className="font-medium">{f.q}</span>
+                  <ChevronDown className={`w-4 h-4 text-neutral-500 transition-transform ${openFaq === i ? 'rotate-180' : ''}`} />
                 </button>
-                {openFaq === i && <p className="mt-2 text-neutral-600 text-sm">{f.a}</p>}
+                {openFaq === i && <p className="px-4 pb-4 text-sm leading-relaxed text-neutral-600">{f.a}</p>}
               </div>
             ))}
           </div>

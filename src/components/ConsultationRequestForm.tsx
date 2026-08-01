@@ -74,8 +74,8 @@ export default function ConsultationRequestForm({ source = 'Trang Chủ', classN
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`bg-white p-3 shadow-xl rounded-2xl border border-neutral-200 max-h-[min(560px,calc(100vh-220px))] overflow-y-auto ${className}`}>
-      <h2 className="text-2xl font-bold mb-2.5">Gửi Yêu Cầu Tư Vấn Cho Doanh Nghiệp Và Cá Nhân, Tổ Chức</h2>
+    <form onSubmit={handleSubmit} className={`bg-white p-6 shadow-sm rounded-xl border border-neutral-200 max-h-[min(560px,calc(100vh-220px))] overflow-y-auto ${className}`}>
+      <h2 className="text-2xl font-bold mb-4">Gửi Yêu Cầu Tư Vấn Cho Doanh Nghiệp Và Cá Nhân, Tổ Chức</h2>
 
       {isSubmitted && (
         <div className="mb-2 rounded-xl bg-green-50 border border-green-200 p-2.5 text-green-900 text-sm">
@@ -92,7 +92,7 @@ export default function ConsultationRequestForm({ source = 'Trang Chủ', classN
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         placeholder="Họ và tên"
-        className="w-full p-2.5 mb-2 border rounded-xl"
+        className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 mb-4 text-sm transition focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
       />
 
       <label className="block mb-1 font-semibold">Số Điện Thoại / Zalo *</label>
@@ -101,14 +101,14 @@ export default function ConsultationRequestForm({ source = 'Trang Chủ', classN
         value={formData.phone}
         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
         placeholder="Số điện thoại / Zalo"
-        className="w-full p-2.5 mb-2 border rounded-xl"
+        className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 mb-4 text-sm transition focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
       />
 
       <label className="block mb-1 font-semibold">Dịch vụ cần tư vấn</label>
       <select
         value={formData.service}
         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-        className="w-full p-2.5 mb-2 border rounded-xl"
+        className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 mb-4 text-sm transition focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
       >
         <option>Khôi phục tài khoản Facebook bị khóa/hack</option>
         <option>Khiếu nại nội dung vi phạm</option>
@@ -124,14 +124,14 @@ export default function ConsultationRequestForm({ source = 'Trang Chủ', classN
         value={formData.message}
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         placeholder="Ví dụ: Facebook bị khóa/hack, bài viết bị gỡ nhầm, thông tin cá nhân bị xuyên tạc, hoặc kết quả tìm kiếm sai lệch về bạn..."
-        className="w-full p-2.5 mb-2 border rounded-xl"
+        className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 mb-4 text-sm transition focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
       />
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold transition ${
-          isSubmitting ? 'bg-neutral-400 cursor-not-allowed' : 'bg-primary-800 text-white hover:bg-primary-700'
+        className={`w-full inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-semibold shadow-sm transition duration-200 ease-out ${
+          isSubmitting ? 'cursor-not-allowed bg-neutral-400' : 'bg-primary-800 text-white hover:bg-primary-700 hover:shadow-md'
         }`}
       >
         {isSubmitting ? (

@@ -51,8 +51,15 @@ export function ContactActionLink({
     }
   };
 
+  const mergedClassName = [
+    'inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold leading-none border border-transparent shadow-sm transition duration-200 ease-out hover:shadow-md',
+    props.className,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <a href={href} onClick={handleClick} {...props}>
+    <a href={href} onClick={handleClick} {...props} className={mergedClassName}>
       {children}
     </a>
   );

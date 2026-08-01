@@ -10,7 +10,7 @@ export default function ChatbotPlaceholder() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {isOpen ? (
-        <div className="w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-neutral-200 overflow-hidden animate-fade-in">
+        <div className="w-80 sm:w-96 bg-white rounded-2xl shadow-lg border border-neutral-200 overflow-hidden animate-fade-in">
           {/* Header */}
           <div className="bg-primary-800 text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -22,7 +22,7 @@ export default function ChatbotPlaceholder() {
                 <div className="text-xs text-primary-200">Đang trực tuyến</div>
               </div>
             </div>
-            <button onClick={() => setIsOpen(false)} className="hover:bg-white/10 p-1 rounded-lg transition-colors">
+            <button onClick={() => setIsOpen(false)} className="rounded-xl p-1.5 transition duration-200 ease-out hover:bg-white/10">
               <X className="w-6 h-6" />
             </button>
           </div>
@@ -39,28 +39,28 @@ export default function ChatbotPlaceholder() {
           {/* Input Area */}
           <div className="p-4 bg-white border-t border-neutral-100">
             <div className="flex gap-2 mb-3">
-              <ContactActionLink action="call" source="Chatbot" className="flex-1 flex items-center justify-center gap-2 bg-red-50 text-crisis-red py-2 rounded-lg text-sm font-semibold hover:bg-red-100 transition-colors border border-red-100">
+              <ContactActionLink action="call" source="Chatbot" className="flex-1 flex items-center justify-center gap-2 bg-red-50 text-[color:var(--color-crisis-red)] py-2 rounded-2xl text-sm font-semibold hover:bg-red-100 transition-all duration-200 border border-red-100">
                 <Phone className="w-4 h-4" />
                 Gọi 24/7
               </ContactActionLink>
-              <ContactActionLink action="zalo" source="Chatbot" className="flex-1 flex items-center justify-center gap-2 bg-blue-50 text-blue-600 py-2 rounded-lg text-sm font-semibold hover:bg-blue-100 transition-colors border border-blue-100">
+              <ContactActionLink action="zalo" source="Chatbot" className="flex-1 flex items-center justify-center gap-2 bg-blue-50 text-blue-600 py-2 rounded-2xl text-sm font-semibold hover:bg-blue-100 transition-all duration-200 border border-blue-100">
                 <MessageCircle className="w-4 h-4" />
                 Zalo
               </ContactActionLink>
             </div>
             <div className="flex gap-2">
-              <input type="text" placeholder="Nhập tin nhắn..." className="flex-1 bg-neutral-100 border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-primary-800" />
-              <button className="bg-primary-800 text-white p-2 rounded-xl hover:bg-primary-900 transition-colors">
+              <input type="text" placeholder="Nhập tin nhắn..." className="flex-1 rounded-2xl border border-neutral-200 bg-neutral-100 px-4 py-2 text-sm transition focus:outline-none focus:ring-2 focus:ring-primary-800 focus:border-transparent" />
+              <button type="button" className="rounded-xl bg-primary-800 p-2.5 text-white shadow-sm transition duration-200 ease-out hover:bg-primary-900 hover:shadow-md">
                 <Send className="w-5 h-5" />
               </button>
             </div>
           </div>
         </div>
       ) : (
-        <button onClick={() => setIsOpen(true)} className="w-16 h-16 bg-primary-800 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform hover:bg-primary-900 relative group">
+        <button onClick={() => setIsOpen(true)} className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-primary-800 text-white shadow-lg transition duration-300 ease-out hover:bg-primary-900">
           <MessageCircle className="w-8 h-8" />
           <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white"></span>
-          <div className="absolute right-20 bg-white text-primary-900 px-4 py-2 rounded-xl shadow-xl font-bold text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-neutral-100">
+          <div className="absolute right-20 bg-white text-primary-900 px-4 py-2 rounded-xl shadow-sm font-bold text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-neutral-100">
             Cần hỗ trợ gấp? Nhắn em ngay!
           </div>
         </button>

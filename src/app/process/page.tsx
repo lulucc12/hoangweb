@@ -97,14 +97,14 @@ export default function ProcessPage() {
   };
 
   return (
-    <div className="bg-white pt-20">
+    <div className="bg-neutral-50 pt-20">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-800 to-primary-900 py-16">
+      <section className="bg-gradient-to-br from-primary-800 to-primary-900 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
             Quy trình hỗ trợ khiếu nại chuẩn pháp lý
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Quy Trình Tư Vấn Xử Lý Khủng Hoảng Truyền Thông<br />và Sự Cố Tài Khoản Facebook
           </h1>
           <p className="text-lg text-primary-200 max-w-2xl mx-auto">
@@ -114,25 +114,25 @@ export default function ProcessPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Disclaimer />
         </div>
       </section>
 
-      <section className="py-12 bg-primary-50">
+      <section className="py-20 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl border border-primary-200 bg-white p-8 shadow-sm">
-            <div className="grid gap-8 lg:grid-cols-3">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-subtle">
+            <div className="grid gap-10 lg:grid-cols-3">
               <div className="lg:col-span-2">
                 <h2 className="text-3xl font-bold text-primary-900 mb-4">Quy trình ứng phó sự cố và kiểm soát rủi ro truyền thông</h2>
                 <p className="text-neutral-600 mb-6">
                   Khi sự cố xuất hiện, yếu tố quan trọng nhất là đánh giá nhanh, chuẩn bị hồ sơ và triển khai phương án ứng phó đúng kênh hỗ trợ của nền tảng.
                 </p>
               </div>
-              <div className="rounded-2xl bg-primary-900 p-6 text-white">
-                <h3 className="text-xl font-bold mb-3">3 bước khôi phục nhanh</h3>
-                <ul className="space-y-3 text-sm text-primary-100">
+              <div className="rounded-2xl bg-primary-900 p-8 text-white">
+                <h3 className="text-xl font-bold mb-4">3 bước khôi phục nhanh</h3>
+                <ul className="space-y-4 text-sm text-primary-100">
                   <li>• Xác minh email/SĐT liên kết và thu thập ảnh giấy tờ.</li>
                   <li>• Soạn hồ sơ khôi phục theo mẫu Meta, gửi yêu cầu chính thức.</li>
                   <li>• Theo dõi ticket và bổ sung thông tin khi nền tảng yêu cầu.</li>
@@ -144,7 +144,7 @@ export default function ProcessPage() {
       </section>
 
       {/* Process Steps */}
-      <section className="py-16">
+      <section className="py-22">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {steps.map((step, index) => {
             const Icon = step.icon;
@@ -215,27 +215,27 @@ export default function ProcessPage() {
       </section>
 
       {/* Outcomes - Transparency */}
-      <section className="py-16 bg-neutral-50">
+      <section className="py-20 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-primary-900 text-center mb-12">
+          <h2 className="text-2xl font-bold text-primary-900 text-center mb-14">
             Kết Quả Có Thể Xảy Ra — Minh Bạch Từ Đầu
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-green-200">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl border border-neutral-200 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-green-600" />
               </div>
               <h3 className="font-bold text-green-800 mb-2">Nền tảng gỡ bài</h3>
               <p className="text-sm text-green-700">Khiếu nại được chấp thuận, nội dung vi phạm bị gỡ bỏ. Đội ngũ giám sát 30 ngày và theo dõi khả năng tái đăng.</p>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-yellow-200">
+            <div className="bg-white p-6 rounded-2xl border border-neutral-200 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
                 <AlertTriangle className="w-6 h-6 text-yellow-600" />
               </div>
               <h3 className="font-bold text-yellow-800 mb-2">Nền tảng từ chối / Yêu cầu bổ sung</h3>
               <p className="text-sm text-yellow-700">Hỗ trợ appeal lần 2 với bằng chứng mạnh hơn, hoặc đề xuất biện pháp thay thế phù hợp.</p>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-blue-200">
+            <div className="bg-white p-6 rounded-2xl border border-neutral-200 shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-blue-600" />
               </div>
@@ -246,12 +246,12 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="py-12">
+      <section className="py-20">
         <QuickContactCta />
       </section>
 
       {/* Important Notice */}
-      <section className="py-12 bg-amber-50">
+      <section className="py-20 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-start gap-4">
             <AlertTriangle className="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" />
@@ -269,7 +269,7 @@ export default function ProcessPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700">
+      <section className="py-20 bg-gradient-to-r from-red-600 to-red-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Cần hỗ trợ khiếu nại nội dung hoặc khôi phục tài khoản?

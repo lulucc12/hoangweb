@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useEffect, useRef, useState, FormEvent } from 'react';
 import { Phone, MessageCircle, Zap, X, Loader2, Shield } from 'lucide-react';
 import { logActivity } from '@/lib/activity';
 import { ContactActionLink } from '@/components/ContactActionLink';
@@ -23,6 +23,15 @@ export default function EmergencyConsultForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
 
   const services = [
     'Khiếu nại nội dung vi phạm',
@@ -72,7 +81,7 @@ export default function EmergencyConsultForm() {
     setIsSubmitting(false);
 
     // Đóng form sau 3s
-    setTimeout(() => {
+    timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
       setIsSubmitted(false);
     }, 3000);
@@ -82,7 +91,7 @@ export default function EmergencyConsultForm() {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-red-600 to-red-500 text-white px-6 py-4 rounded-2xl shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:shadow-[0_0_40px_rgba(220,38,38,0.6)] transition-all flex items-center gap-3 animate-pulse"
+        className="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center gap-2 rounded-xl border border-red-500/20 bg-gradient-to-r from-red-600 to-red-500 px-4 py-2.5 text-white font-semibold shadow-sm transition duration-300 ease-out hover:bg-red-700"
         aria-label="Mở form tư vấn khẩn cấp"
       >
         <Zap className="w-6 h-6" />
@@ -94,12 +103,12 @@ export default function EmergencyConsultForm() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="bg-white rounded-3xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-up">
+      <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-lg animate-slide-up">
         {/* Header */}
-        <div className="bg-gradient-to-r from-red-600 to-red-500 rounded-t-3xl p-6 text-white relative">
+        <div className="bg-gradient-to-r from-red-600 to-red-500 rounded-t-xl p-6 text-white relative">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 w-10 h-10 rounded-xl bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors"
+            className="absolute top-4 right-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 transition duration-200 ease-out hover:bg-white/30"
             aria-label="Đóng form"
           >
             <X className="w-5 h-5" />
@@ -136,7 +145,7 @@ export default function EmergencyConsultForm() {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="Họ và Tên của bạn"
-              className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50"
+              className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 text-sm transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50 disabled:cursor-not-allowed"
             />
           </div>
 
@@ -152,7 +161,7 @@ export default function EmergencyConsultForm() {
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="Số điện thoại của bạn"
-              className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50"
+              className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 text-sm transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50 disabled:cursor-not-allowed"
             />
           </div>
 
@@ -165,7 +174,7 @@ export default function EmergencyConsultForm() {
               disabled={isSubmitted}
               value={formData.service}
               onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-              className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50 appearance-none bg-white"
+              className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 text-sm transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50 disabled:cursor-not-allowed"
             >
               {services.map((s) => (
                 <option key={s} value={s}>{s}</option>
@@ -185,17 +194,17 @@ export default function EmergencyConsultForm() {
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Ví dụ: Link bài Facebook bóc phốt sai sự thật... TikTok clip ghép nội dung xuyên tạc... Kết quả Google Search hiện bài báo cũ sai sự thật..."
-              className="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50 resize-none"
+              className="w-full rounded-2xl border border-neutral-300 bg-white px-4 py-3 text-sm transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent disabled:bg-neutral-50 disabled:cursor-not-allowed resize-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
             disabled={isSubmitting || isSubmitted}
-            className={`w-full flex items-center justify-center gap-3 py-4 rounded-xl font-bold text-lg transition-all ${
+            className={`w-full inline-flex items-center justify-center gap-3 rounded-xl px-5 py-4 text-lg font-semibold transition duration-200 ease-out ${
               isSubmitting || isSubmitted
-                ? 'bg-neutral-400 cursor-not-allowed'
-                : 'bg-gradient-to-r from-red-600 to-red-500 text-white hover:from-red-500 hover:to-red-400 shadow-[0_0_20px_rgba(220,38,38,0.4)]'
+                ? 'cursor-not-allowed bg-neutral-400'
+                : 'bg-gradient-to-r from-red-600 to-red-500 text-white shadow-sm hover:bg-red-700 hover:from-red-500 hover:to-red-400 hover:shadow-md'
             }`}
           >
             {isSubmitting ? (

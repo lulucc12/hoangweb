@@ -72,25 +72,25 @@ export default function BlogPage() {
   ];
 
   return (
-    <div className="bg-neutral-50 pt-20">
-      <section className="bg-primary-900 py-16 text-white text-center">
+    <div className="bg-neutral-50 pt-24 pb-24">
+      <section className="bg-primary-900 py-20 text-white text-center">
         <h1 className="text-4xl font-bold mb-6">Kiến Thức & Case Study</h1>
         <p className="max-w-2xl mx-auto px-4 text-primary-200">
           Chia sẻ quy trình xử lý khủng hoảng, khôi phục tài khoản và các căn cứ pháp lý để bảo vệ danh tiếng.
         </p>
       </section>
 
-      <section className="py-16 max-w-7xl mx-auto px-6">
+      <section className="py-20 max-w-7xl mx-auto px-6">
         <div className="mb-10">
           <QuickContactCta />
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <article key={post.slug} className="bg-white rounded-2xl shadow-md p-6 flex flex-col border">
-              <span className="text-xs font-bold text-primary-800 bg-primary-50 px-3 py-1 rounded-lg w-max mb-4">{post.category}</span>
-              <h2 className="text-xl font-bold mb-3 hover:text-primary-800"><Link href={`/blog/${post.slug}`}>{post.title}</Link></h2>
-              <p className="text-sm text-neutral-600 flex-1 mb-6">{post.excerpt}</p>
-              <Link href={`/blog/${post.slug}`} className="text-primary-800 font-bold text-sm flex items-center gap-1">Đọc bài <ChevronRight className="w-4 h-4"/></Link>
+            <article key={post.slug} className="bg-white rounded-2xl shadow-sm p-6 flex flex-col border border-neutral-100">
+              <span className="text-xs font-semibold text-primary-800 bg-primary-50 px-3 py-1 rounded-full w-max mb-4">{post.category}</span>
+              <h2 className="text-xl font-semibold mb-3 text-primary-900 hover:text-primary-800 leading-snug"><Link href={`/blog/${post.slug}`}>{post.title}</Link></h2>
+              <p className="text-sm text-neutral-600 flex-1 mb-6 leading-relaxed">{post.excerpt}</p>
+              <Link href={`/blog/${post.slug}`} className="text-primary-800 font-semibold text-sm flex items-center gap-1">Đọc bài <ChevronRight className="w-4 h-4"/></Link>
             </article>
           ))}
         </div>

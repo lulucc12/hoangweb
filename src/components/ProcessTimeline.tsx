@@ -27,28 +27,28 @@ const steps = [
 
 export default function ProcessTimeline() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4">Quy Trình Làm Việc Chuyên Nghiệp</h2>
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 mb-4 leading-tight">Quy Trình Làm Việc Chuyên Nghiệp</h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Mỗi trường hợp đều được xử lý có phương án, có hồ sơ và có tiến độ rõ ràng.
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-4">
+        <div className="grid gap-10 lg:grid-cols-4">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <div key={step.title} className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary-900 text-white flex items-center justify-center">
-                    <Icon className="w-6 h-6" />
+              <div key={step.title} className="rounded-2xl border border-neutral-200/80 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:shadow-[0_16px_40px_rgba(15,23,42,0.08)] transition-all">
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-10 h-10 rounded-lg bg-primary-50 text-primary-700 flex items-center justify-center ring-1 ring-primary-100">
+                    <Icon className="w-5 h-5" />
                   </div>
-                  <div className="text-sm font-semibold text-primary-700">0{index + 1}</div>
+                  <div className="text-sm font-medium text-neutral-400">0{index + 1}</div>
                 </div>
-                <h3 className="text-lg font-bold text-primary-900 mb-2">{step.title}</h3>
-                <p className="text-sm text-neutral-600">{step.description}</p>
+                <h3 className="text-xl font-semibold text-primary-900 mb-3">{step.title}</h3>
+                <p className="text-sm text-neutral-600 leading-relaxed">{step.description}</p>
               </div>
             );
           })}

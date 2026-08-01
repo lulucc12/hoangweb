@@ -3,10 +3,10 @@ import QuickContactCta from '@/components/QuickContactCta';
 
 export default function PrivacyPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16 text-neutral-800">
+    <div className="max-w-4xl mx-auto px-4 py-20 text-neutral-800">
       <h1 className="text-4xl font-bold mb-8">Chính sách Bảo mật Thông tin</h1>
       
-      <div className="prose prose-lg max-w-none space-y-6">
+      <div className="prose prose-lg max-w-none space-y-8">
         <p>Tại <strong>Crisis Shield</strong>, chúng tôi hiểu rằng thông tin của bạn là tài sản quý giá nhất. Chúng tôi cam kết bảo mật tuyệt đối mọi thông tin khách hàng trong quá trình tư vấn và hỗ trợ thủ tục xử lý khủng hoảng truyền thông.</p>
 
         <h2 className="text-2xl font-bold">1. Phạm vi thu thập thông tin</h2>
