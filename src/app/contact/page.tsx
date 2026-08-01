@@ -26,8 +26,8 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold text-primary-900">Thông Tin Liên Hệ</h2>
             <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6">
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white border border-neutral-200 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-red-600" />
+                  <div className="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center">
+                  <Phone className="w-6 h-6 text-slate-700" />
                 </div>
                 <div>
                   <div className="text-sm text-neutral-500">Hotline / Zalo</div>
