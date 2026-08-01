@@ -11,7 +11,6 @@ import {
   Gavel,
   Target,
 } from 'lucide-react';
-import EmergencyConsultForm from '@/components/EmergencyConsultForm';
 import Disclaimer from '@/components/Disclaimer';
 import { ContactActionLink } from '@/components/ContactActionLink';
 
@@ -113,7 +112,6 @@ export function HeroSection() {
           </div>
 
           <Disclaimer />
-          <EmergencyConsultForm />
 
           <div className="flex flex-wrap gap-8 text-neutral-400 text-sm mt-8">
             <div className="flex items-center gap-2">
