@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <ContactActionLink action="call" source="Footer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-4 py-2.5 font-semibold text-primary-900 transition hover:bg-primary-50">
-                Gọi hotline
+                <Phone className="w-4 h-4" /> Gọi hotline
               </ContactActionLink>
               <ContactActionLink action="zalo" source="Footer" className="inline-flex items-center justify-center gap-2 rounded-xl border border-primary-700 bg-primary-800/70 px-4 py-2.5 font-semibold text-white transition hover:bg-primary-700">
                 <MessageCircle className="w-4 h-4" /> Nhắn Zalo
