@@ -54,7 +54,7 @@ export default function FAQPage() {
     <div className="bg-neutral-50">
       <section className="bg-primary-900 py-20 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">FAQ - Câu hỏi thường gặp</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-slate-100">FAQ - Câu hỏi thường gặp</h1>
           <p className="text-base sm:text-lg text-primary-200">
             Các trả lời nhanh về khôi phục tài khoản, khiếu nại nội dung và xử lý khủng hoảng truyền thông.
           </p>
