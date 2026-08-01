@@ -1,0 +1,305 @@
+import {
+  Phone,
+  MessageCircle,
+  Shield,
+  Zap,
+  Clock,
+  ChevronRight,
+  CheckCircle,
+  AlertCircle,
+  FileText,
+  Gavel,
+  Target,
+} from 'lucide-react';
+import EmergencyConsultForm from '@/components/EmergencyConsultForm';
+import Disclaimer from '@/components/Disclaimer';
+import { ContactActionLink } from '@/components/ContactActionLink';
+
+const solutionCards = [
+  {
+    title: 'Đánh giá tình huống & đề xuất phương án',
+    description: 'Phân tích rủi ro và đề xuất giải pháp ứng phó phù hợp theo từng tình huống truyền thông.',
+    icon: Zap,
+    accent: 'blue',
+  },
+  {
+    title: 'Căn cứ pháp lý & hồ sơ chuẩn',
+    description: 'Xây dựng hồ sơ chuyên môn và kênh trình duyệt chính thức theo quy định nền tảng.',
+    icon: Gavel,
+    accent: 'purple',
+  },
+  {
+    title: 'Yêu cầu gỡ nội dung & khôi phục',
+    description: 'Nộp khiếu nại, đề nghị gỡ bài và phối hợp khôi phục tài khoản an toàn.',
+    icon: Target,
+    accent: 'green',
+  },
+  {
+    title: 'Giám sát & kiểm soát rủi ro',
+    description: 'Theo dõi tiến độ phản hồi, điều chỉnh phương án và bảo đảm xử lý minh bạch.',
+    icon: AlertCircle,
+    accent: 'orange',
+  },
+];
+
+const trustStats = [
+  ['24/7', 'Hỗ trợ nhanh'],
+  ['100%', 'Hồ sơ chuẩn'],
+  ['0%', 'Bỏ sót bước'],
+];
+
+const platforms = ['Mạng xã hội', 'Công cụ tìm kiếm', 'Diễn đàn', 'Tin tức & Báo chí', 'Video & Livestream', 'Khác'];
+
+export function HeroSection() {
+  return (
+    <section className="relative min-h-screen bg-gradient-to-br from-primary-900 via-primary-800 to-primary-950 flex items-center pt-0">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            Tư vấn khủng hoảng truyền thông chuyên nghiệp
+          </div>
+
+          <div className="mb-6 rounded-2xl border border-white/15 bg-white/10 backdrop-blur-sm p-4 sm:p-5 w-fit">
+            <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-primary-200 mb-2">Giải pháp xử lý khủng hoảng truyền thông & phục hồi tài khoản Facebook</h1>
+          </div>
+
+          <div className="grid gap-3 max-w-2xl mb-6 sm:grid-cols-3">
+            <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90">
+              Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền
+            </div>
+            <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90">
+              Loại bỏ nội dung tiêu cực với cách tiếp cận thận trọng
+            </div>
+            <div className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/90">
+              Quy trình pháp lý minh bạch, an toàn và có kiểm soát
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 mb-8 bg-green-500/10 border border-green-500/30 w-fit px-4 py-2 rounded-lg">
+            <CheckCircle className="w-5 h-5 text-green-400" />
+            <span className="text-green-300 font-medium">Đề xuất phương án chuyên môn, kèm hồ sơ và lộ trình thực hiện rõ ràng</span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 mb-12">
+            <ContactActionLink
+              action="call"
+              source="Hero CTA"
+              className="flex flex-col items-center justify-center gap-1 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-bold p-5 rounded-2xl transition-all shadow-[0_0_20px_rgba(220,38,38,0.4)] hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]"
+            >
+              <Phone className="w-6 h-6" />
+              <span className="text-xs">GỌI TƯ VẤN 24/7</span>
+              <span className="text-lg">0877 852 153</span>
+            </ContactActionLink>
+            <ContactActionLink
+              action="zalo"
+              source="Hero CTA"
+              className="flex flex-col items-center justify-center gap-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-semibold p-5 rounded-2xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]"
+            >
+              <MessageCircle className="w-5 h-5" />
+              <span className="text-xs">NHẮN TIN ZALO</span>
+              <span className="text-lg">TƯ VẤN NGAY</span>
+            </ContactActionLink>
+          </div>
+
+          <Disclaimer />
+          <EmergencyConsultForm />
+
+          <div className="flex flex-wrap gap-6 text-neutral-400 text-sm mt-8">
+            <div className="flex items-center gap-2">
+              <FileText className="w-5 h-5 text-green-400" />
+              <span>Chuẩn bị hồ sơ, bằng chứng và phương án tư vấn phù hợp với từng tình huống</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Gavel className="w-5 h-5 text-green-400" />
+              <span>Áp dụng căn cứ pháp lý phù hợp theo quy định hiện hành và quy trình nền tảng</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5 text-green-400" />
+              <span>Theo dõi tiến trình xử lý và phản hồi qua kênh chính thức</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Shield className="w-5 h-5 text-green-400" />
+              <span>Đề xuất lộ trình xử lý rõ ràng và báo cáo tiến độ minh bạch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <ChevronRight className="w-8 h-8 text-white/50 rotate-90" />
+      </div>
+    </section>
+  );
+}
+
+export function ContractInvoiceSection() {
+  return (
+    <section className="py-16 bg-primary-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="rounded-[2.5rem] border border-primary-200 bg-white p-8 md:p-10 shadow-sm">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] items-center">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
+                <Shield className="w-4 h-4" />
+                Minh bạch và đúng quy trình
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">
+                Quy trình minh bạch từ đánh giá đến triển khai
+              </h2>
+              <p className="text-base md:text-lg text-neutral-600 mb-6">
+                Đánh giá rủi ro, xác định mục tiêu và xây dựng phương án phù hợp với từng đặc thù sự cố.
+              </p>
+              <ul className="grid gap-3 text-neutral-700">
+                <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Định hướng xử lý rõ ràng theo mục tiêu ưu tiên.</li>
+                <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Chuẩn bị hồ sơ chuyên môn và phương án triển khai an toàn.</li>
+                <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Theo dõi tiến độ và cập nhật khách hàng một cách rõ ràng.</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl border border-primary-100 bg-primary-900 p-8 text-white shadow-lg">
+              <div className="text-sm uppercase tracking-[0.24em] text-primary-200 font-semibold mb-4">Quy trình tư vấn</div>
+              <div className="space-y-4 text-sm text-primary-100">
+                <div className="rounded-3xl bg-white/5 p-4">
+                  <div className="font-semibold mb-2">1. Đánh giá tình huống</div>
+                  <div>Xác định nguồn phát sinh, mức độ ảnh hưởng và mục tiêu cần kiểm soát.</div>
+                </div>
+                <div className="rounded-3xl bg-white/5 p-4">
+                  <div className="font-semibold mb-2">2. Xây dựng phương án</div>
+                  <div>Lên lộ trình, hồ sơ và kênh xử lý phù hợp với nền tảng.</div>
+                </div>
+                <div className="rounded-3xl bg-white/5 p-4">
+                  <div className="font-semibold mb-2">3. Theo dõi tiến độ</div>
+                  <div>Giám sát phản hồi, điều chỉnh phương án và cập nhật khách hàng.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function ServiceFocusSection() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl border border-primary-100 bg-gradient-to-br from-primary-50 to-white p-8 md:p-10 shadow-sm">
+          <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
+                <Shield className="w-4 h-4" />
+                Tư vấn xử lý khủng hoảng truyền thông & kiểm soát sự cố tài khoản
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">
+                Hỗ trợ xử lý sự cố và khôi phục tài khoản
+              </h2>
+              <p className="text-base md:text-lg text-neutral-600 mb-6">
+                Chúng tôi đánh giá rủi ro, chuẩn bị hồ sơ, đề xuất lộ trình và đồng hành cùng bạn khi thông tin tiêu cực lan truyền hoặc khi tài khoản bị ảnh hưởng.
+              </p>
+              <ul className="space-y-3 text-sm text-neutral-700">
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Định hướng giải pháp phù hợp từng tình huống khủng hoảng và tài khoản.</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Chuẩn bị tài liệu, chứng cứ, hồ sơ khôi phục và yêu cầu gỡ nội dung.</li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Hỗ trợ khôi phục quyền truy cập Facebook, fanpage, group và kiểm soát nội dung xấu.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function TrustSection() {
+  return (
+    <section className="py-20 bg-neutral-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl border border-primary-100 bg-white p-8 md:p-10 shadow-sm">
+          <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
+                <Shield className="w-4 h-4" />
+                Cam kết và trách nhiệm
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">
+                Minh bạch, chuẩn xác và đồng hành từng bước
+              </h2>
+              <p className="text-base md:text-lg text-neutral-600 mb-6">
+                Khách hàng được cập nhật tiến trình xử lý, hồ sơ cần thiết và phản hồi chủ động trong toàn bộ quy trình.
+              </p>
+              <div className="grid sm:grid-cols-3 gap-4">
+                {trustStats.map(([value, label]) => (
+                  <div key={label} className="rounded-2xl bg-neutral-50 p-4 text-center border border-neutral-200">
+                    <div className="text-2xl font-bold text-primary-900">{value}</div>
+                    <div className="text-sm text-neutral-600">{label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function SolutionsSection() {
+  return (
+    <section className="py-20 bg-neutral-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Giải pháp nghiệp vụ theo từng tình huống</h2>
+          <p className="text-base md:text-lg text-neutral-600">
+            Các phương án được xây dựng phù hợp với quy trình xử lý và mục tiêu bảo vệ danh tiếng, tài sản số và uy tín tổ chức.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          {solutionCards.map(({ title, description, icon: Icon, accent }) => (
+            <div key={title} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-neutral-100 h-full flex flex-col">
+              <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 flex-shrink-0 ${
+                accent === 'blue' ? 'bg-blue-100' :
+                accent === 'purple' ? 'bg-purple-100' :
+                accent === 'green' ? 'bg-green-100' : 'bg-orange-100'
+              }`}>
+                <Icon className={`w-7 h-7 ${
+                  accent === 'blue' ? 'text-blue-600' :
+                  accent === 'purple' ? 'text-purple-600' :
+                  accent === 'green' ? 'text-green-600' : 'text-orange-600'
+                }`} />
+              </div>
+              <h3 className="text-lg font-bold text-primary-900 mb-3">{title}</h3>
+              <p className="text-neutral-600 text-sm flex-1">{description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function PlatformsSection() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Các kênh và nền tảng hỗ trợ triển khai</h2>
+          <p className="text-sm md:text-base text-neutral-600 max-w-2xl mx-auto">
+            Hỗ trợ khiếu nại, khôi phục và giám sát trên các nền tảng chính của mạng xã hội, tìm kiếm và tin tức.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-stretch">
+          {platforms.map((platform) => (
+            <div key={platform} className="bg-white rounded-xl p-6 text-center border border-neutral-200 hover:border-primary-300 hover:shadow-lg transition-all h-full flex items-center justify-center">
+              <div className="font-semibold text-primary-900">{platform}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
