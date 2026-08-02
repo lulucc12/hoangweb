@@ -11,7 +11,6 @@ import {
   Gavel,
   Target,
 } from 'lucide-react';
-import Disclaimer from '@/components/Disclaimer';
 import { ContactActionLink } from '@/components/ContactActionLink';
 
 const solutionCards = [
@@ -68,14 +67,14 @@ export function HeroSection() {
           <div className="mb-6 rounded-2xl border border-amber-400/20 bg-amber-500/10 p-4 sm:p-5 max-w-2xl">
             <div className="flex items-start gap-3">
               <p className="text-sm sm:text-base leading-7 text-primary-100">
-                Hỗ trợ khẩn cấp cho các trường hợp phát sinh đột ngột, phù hợp cho khách hàng cá nhân và doanh nghiệp cần phản ứng nhanh với sự cố tài khoản hoặc nội dung tiêu cực.
+                Hỗ trợ khẩn cấp cho các trường hợp phát sinh đột ngột, phù hợp cá nhân và doanh nghiệp cần phản ứng nhanh với sự cố tài khoản hoặc nội dung tiêu cực.
               </p>
             </div>
           </div>
 
           <div className="grid gap-4 max-w-2xl mb-6 sm:grid-cols-3">
-            <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
-              Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền
+            <div className="rounded-full border border-amber-200/50 bg-[linear-gradient(135deg,rgba(252,245,220,0.98),rgba(240,224,170,0.92))] px-4 py-2 text-sm text-amber-950 shadow-[0_2px_10px_rgba(255,255,255,0.35),0_1px_3px_rgba(120,82,20,0.18),inset_0_1px_0_rgba(255,255,255,0.7)]">
+              Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền (180 ngày)
             </div>
             <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
               Loại bỏ nội dung tiêu cực với cách tiếp cận thận trọng
@@ -110,8 +109,6 @@ export function HeroSection() {
               <span className="text-lg">TƯ VẤN NGAY</span>
             </ContactActionLink>
           </div>
-
-          <Disclaimer />
 
           <div className="flex flex-wrap gap-8 text-neutral-400 text-sm mt-8">
             <div className="flex items-center gap-2">
@@ -203,7 +200,7 @@ export function ServiceFocusSection() {
                 Hỗ trợ xử lý sự cố và khôi phục tài khoản
               </h2>
               <p className="text-base md:text-lg text-neutral-600 mb-6">
-                Chúng tôi đánh giá rủi ro, chuẩn bị hồ sơ, đề xuất lộ trình và đồng hành cùng bạn khi thông tin tiêu cực lan truyền hoặc khi tài khoản bị ảnh hưởng.
+                Chúng tôi với đội ngũ nhiều năm kinh nhiệm đã tư vấn hỗ trợ khôi phục hàng ngàn tài khoản gặp sự cố và thông tin tiêu cực lan truyền.
               </p>
               <ul className="space-y-3 text-sm text-neutral-700">
                 <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5" /> Định hướng giải pháp phù hợp từng tình huống khủng hoảng và tài khoản.</li>
@@ -254,38 +251,7 @@ export function TrustSection() {
 }
 
 export function SolutionsSection() {
-  return (
-    <section className="py-24 bg-neutral-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">Giải pháp nghiệp vụ theo từng tình huống</h2>
-          <p className="text-base md:text-lg text-neutral-600">
-            Các phương án được xây dựng phù hợp với quy trình xử lý và mục tiêu bảo vệ danh tiếng, tài sản số và uy tín tổ chức.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-stretch">
-          {solutionCards.map(({ title, description, icon: Icon, accent }) => (
-            <div key={title} className="bg-white rounded-2xl p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:shadow-[0_16px_40px_rgba(15,23,42,0.08)] transition-all border border-neutral-200/80 h-full flex flex-col">
-              <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 flex-shrink-0 ${
-                accent === 'blue' ? 'bg-blue-100' :
-                accent === 'purple' ? 'bg-purple-100' :
-                accent === 'green' ? 'bg-green-100' : 'bg-orange-100'
-              }`}>
-                <Icon className={`w-6 h-6 ${
-                  accent === 'blue' ? 'text-blue-600' :
-                  accent === 'purple' ? 'text-purple-600' :
-                  accent === 'green' ? 'text-green-600' : 'text-orange-600'
-                }`} />
-              </div>
-              <h3 className="text-lg font-semibold text-primary-900 mb-3">{title}</h3>
-              <p className="text-neutral-600 text-sm flex-1 leading-relaxed">{description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return null;
 }
 
 export function PlatformsSection() {

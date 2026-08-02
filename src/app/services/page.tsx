@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Phone, MessageCircle, Check, Shield, FileText, Gavel, Target, Clock, AlertCircle } from 'lucide-react';
 import Disclaimer from '@/components/Disclaimer';
 import QuickContactCta from '@/components/QuickContactCta';
@@ -127,6 +128,28 @@ export default function ServicesPage() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-[2rem] border border-primary-100 bg-primary-50 p-8 md:p-10 shadow-subtle flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
+                <AlertCircle className="w-4 h-4" />
+                Chuyên mục hỗ trợ đặc thù
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-3">
+                Hỗ trợ khiếu nại xử lý bài viết bóc phốt và tin đồn thất thiệt
+              </h2>
+              <p className="text-neutral-600 max-w-2xl">
+                Nếu nội dung sai sự thật, tin đồn xuyên tạc hoặc bài viết bóc phốt đang gây ảnh hưởng, hãy xem trang chuyên biệt để biết cách tiếp cận phù hợp.
+              </p>
+            </div>
+            <Link href="/services/defamation" className="inline-flex items-center justify-center rounded-xl bg-primary-800 px-5 py-3 font-semibold text-white hover:bg-primary-900">
+              Xem trang chuyên sâu
+            </Link>
           </div>
         </div>
       </section>

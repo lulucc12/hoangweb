@@ -78,20 +78,30 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { label: 'Xử lý tài khoản Facebook bị khóa', href: '/services' },
-                { label: 'Khiếu nại bóc phốt và tin đồn', href: '/services' },
+                { label: 'Khiếu nại bóc phốt và tin đồn', href: '/services/defamation' },
                 { label: 'Bảo vệ danh tiếng doanh nghiệp', href: '/services' },
                 { label: 'Giám sát & phản ứng khủng hoảng', href: '/services' },
                 { label: 'Soạn hồ sơ khiếu nại nền tảng', href: '/services' },
                 { label: 'Đào tạo xử lý sự cố truyền thông', href: '/services' },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-neutral-400 hover:text-white transition-colors flex items-center gap-1"
-                  >
-                    <ChevronRight className="w-3 h-3" />
-                    {item.label}
-                  </Link>
+                  {item.href === '/services/defamation' ? (
+                    <a
+                      href={item.href}
+                      className="text-neutral-400 hover:text-white transition-colors flex items-center gap-1"
+                    >
+                      <ChevronRight className="w-3 h-3" />
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-neutral-400 hover:text-white transition-colors flex items-center gap-1"
+                    >
+                      <ChevronRight className="w-3 h-3" />
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
