@@ -114,6 +114,7 @@ export default function Footer() {
               {[
                 { label: 'Trang chủ', href: '/' },
                 { label: 'Quy trình xử lý', href: '/process' },
+                { label: 'Về chúng tôi', href: '/about' },
                 { label: 'Case Study', href: '/blog' },
                 { label: 'FAQ', href: '/faq' },
                 { label: 'Liên hệ', href: '/contact' },
