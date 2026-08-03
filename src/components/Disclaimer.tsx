@@ -11,31 +11,37 @@ export default function Disclaimer() {
         </div>
         <div>
           <h3 className="font-bold text-neutral-900 mb-2 text-sm md:text-base">
-            Tuyên bố minh bạch và cam kết vận hành chuyên nghiệp
+            Tuyên bố & và cam kết vận hành
           </h3>
-          <div className="space-y-1.5 text-xs md:text-sm text-neutral-700 leading-relaxed">
+          <div className="space-y-2 text-xs md:text-sm text-neutral-700 leading-relaxed">
             <div className="flex items-start gap-2">
               <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
               <span>
-                <strong>Dịch vụ rõ ràng:</strong> tư vấn khiếu nại nội dung vi phạm và khôi phục tài khoản Facebook theo quy trình chính thức.
+                <strong>Dịch vụ:</strong> cung cấp tư vấn, định hướng phương án xử lý và hỗ trợ chuẩn bị hồ sơ khiếu nại hoặc khôi phục tài khoản theo quy trình chính thức.
               </span>
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
               <span>
-                <strong>Hướng dẫn chuyên môn:</strong> chuẩn bị bằng chứng, hồ sơ và phương án trình duyệt phù hợp với từng nền tảng.
+                <strong>Hướng dẫn chuyên môn:</strong> tư vấn cách thu thập bằng chứng, sắp xếp tài liệu và trình bày nội dung phù hợp với từng nền tảng và từng tình huống cụ thể.
               </span>
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
               <span>
-                <strong>Giới hạn trách nhiệm:</strong> không can thiệp kỹ thuật trái phép, không mua/bán tài khoản và không sử dụng công cụ giả mạo.
+                <strong>Giới hạn trách nhiệm:</strong> không can thiệp kỹ thuật trái phép, không mua bán tài khoản, không sử dụng công cụ giả mạo và không thay thế vai trò của cơ quan chức năng.
               </span>
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
               <span>
-                <strong>Bảo mật:</strong> mọi tài liệu và thông tin chỉ dùng cho xử lý sự cố, trừ khi có yêu cầu pháp lý hoặc đồng ý của khách hàng.
+                <strong>Bảo mật:</strong> mọi tài liệu, thông tin và trao đổi được bảo quản nội bộ, chỉ sử dụng cho mục đích xử lý sự cố trừ khi có yêu cầu pháp lý hoặc đồng ý của khách hàng.
+              </span>
+            </div>
+            <div className="flex items-start gap-2">
+              <CheckCircle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
+              <span>
+                <strong>Giới hạn cam kết:</strong> chúng tôi không cam kết 100% xử lý thành công; quyết định cuối cùng thuộc về nền tảng.
               </span>
             </div>
           </div>

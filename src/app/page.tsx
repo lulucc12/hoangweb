@@ -89,12 +89,12 @@ export default function HomePage() {
         </div>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {caseCards.map((card) => (
-            <div key={card.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-              <div className="mb-4 flex items-center justify-center rounded-xl bg-white p-4 shadow-sm">
+            <div key={card.title} className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm overflow-hidden transition-transform duration-200 hover:-translate-y-1 hover:shadow-md">
+              <div className="mb-3 overflow-hidden rounded-3xl bg-white shadow-sm">
                 <img
                   src={card.image}
                   alt={card.title}
-                  className="h-24 w-24 object-contain"
+                  className="h-36 w-full object-cover rounded-none transition-transform duration-300 hover:scale-105"
                   loading="lazy"
                 />
               </div>

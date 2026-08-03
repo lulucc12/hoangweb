@@ -74,8 +74,8 @@ export default function ConsultationRequestForm({ source = 'Trang Chủ', classN
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`bg-white p-6 shadow-sm rounded-xl border border-neutral-200 max-h-[min(560px,calc(100vh-220px))] overflow-y-auto ${className}`}>
-      <h2 className="text-2xl font-bold mb-4">Gửi Yêu Cầu Tư Vấn Cho Doanh Nghiệp Và Cá Nhân, Tổ Chức</h2>
+    <form onSubmit={handleSubmit} className={`p-0 max-h-[min(560px,calc(100vh-220px))] overflow-y-auto ${className}`}>
+      <h2 className="text-xl sm:text-2xl font-bold mb-4">Gửi Yêu Cầu Tư Vấn Cho Doanh Nghiệp Và Cá Nhân, Tổ Chức</h2>
 
       {isSubmitted && (
         <div className="mb-2 rounded-xl bg-green-50 border border-green-200 p-2.5 text-green-900 text-sm">
