@@ -60,7 +60,7 @@ export function HeroSection() {
             Tư vấn khủng hoảng truyền thông chuyên nghiệp
           </div>
 
-          <div className="mb-6 rounded-2xl border border-white/10 bg-transparent p-4 sm:p-6 w-fit">
+          <div className="mb-6 rounded-2xl border bg-transparent p-4 sm:p-6 w-fit" style={{ borderColor: '#c5a059' }}>
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-2">Giải pháp xử lý khủng hoảng truyền thông & phục hồi tài khoản Facebook</h1>
           </div>
 
