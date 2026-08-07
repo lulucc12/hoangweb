@@ -217,37 +217,7 @@ export function ServiceFocusSection() {
 }
 
 export function TrustSection() {
-  return (
-    <section className="py-24 bg-neutral-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-xl border border-primary-100 bg-white p-10 md:p-12 shadow-sm">
-          <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-800 mb-4">
-                <Shield className="w-4 h-4" />
-                Cam kết và trách nhiệm
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">
-                Minh bạch, chuẩn xác và đồng hành từng bước
-              </h2>
-              <p className="text-base md:text-lg text-neutral-600 mb-6">
-                Khách hàng được cập nhật tiến trình xử lý, hồ sơ cần thiết và phản hồi chủ động trong toàn bộ quy trình.
-              </p>
-              <div className="grid sm:grid-cols-3 gap-4">
-                {trustStats.map(([value, label]) => (
-                  <div key={label} className="rounded-2xl bg-neutral-50 p-4 text-center border border-neutral-200">
-                    <div className="text-2xl font-bold text-primary-900">{value}</div>
-                    <div className="text-sm text-neutral-600">{label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return null;
 }
 
 export function SolutionsSection() {
