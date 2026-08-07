@@ -160,6 +160,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl border border-slate-200 bg-neutral-50 p-8 md:p-10 shadow-sm">
+            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary-700 mb-3">Tư vấn nhanh</p>
+                <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">Nhận hướng dẫn xử lý sự cố tài khoản và nội dung ngay hôm nay</h2>
+                <p className="text-base leading-8 text-slate-600">
+                  Điền thông tin bên dưới để được hỗ trợ định hướng phương án phù hợp với tình huống của bạn, từ khôi phục tài khoản, khiếu nại nội dung đến kiểm soát danh tiếng.
+                </p>
+              </div>
+              <div className="rounded-3xl border border-slate-200 bg-white p-4 sm:p-6 shadow-sm">
+                <ConsultationRequestForm source="Trang Chủ" className="max-w-none mx-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <QuickContactCta />
       <PlatformsSection />
     </div>
