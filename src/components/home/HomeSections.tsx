@@ -12,6 +12,9 @@ import {
   Target,
 } from 'lucide-react';
 import { ContactActionLink } from '@/components/ContactActionLink';
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({ subsets: ['latin'] });
 
 const solutionCards = [
   {
@@ -61,7 +64,7 @@ export function HeroSection() {
           </div>
 
           <div className="mb-6 rounded-2xl border bg-transparent p-4 sm:p-6 w-fit" style={{ borderColor: '#c5a059' }}>
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-2">Giải pháp xử lý khủng hoảng truyền thông & phục hồi tài khoản Facebook</h1>
+            <h1 className={`${playfair.className} text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight mb-2`}>Giải pháp xử lý khủng hoảng truyền thông &amp; phục hồi tài khoản Facebook</h1>
           </div>
 
           <div className="mb-6 rounded-2xl border border-amber-400/20 bg-amber-500/10 p-4 sm:p-5 max-w-2xl">
