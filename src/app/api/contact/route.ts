@@ -8,9 +8,13 @@ export async function POST(request: Request) {
     const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
     const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
-    if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
-      console.error('Telegram credentials not configured');
-      return NextResponse.json({ success: false, error: 'Configuration error' }, { status: 500 });
+    const missing: string[] = [];
+    if (!TELEGRAM_BOT_TOKEN) missing.push('TELEGRAM_BOT_TOKEN');
+    if (!TELEGRAM_CHAT_ID) missing.push('TELEGRAM_CHAT_ID');
+
+    if (missing.length > 0) {
+      console.error('Telegram credentials not configured, missing:', missing.join(', '));
+      return NextResponse.json({ success: false, error: 'Configuration error', missing }, { status: 500 });
     }
 
     const text = `
