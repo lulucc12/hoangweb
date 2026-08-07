@@ -110,35 +110,7 @@ export default function HomePage() {
       <SolutionsSection />
       <ProcessTimeline />
 
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl border border-slate-200 bg-neutral-50 p-8 md:p-10 shadow-sm">
-            <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary-700 mb-3">Cam kết làm việc</p>
-                <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">Mỗi vụ việc được tiếp cận theo mục tiêu, bằng chứng và điều kiện thực tế</h2>
-                <p className="text-base leading-8 text-slate-600">
-                  Chúng tôi làm việc theo nguyên tắc minh bạch, có căn cứ và phù hợp với quy định nền tảng cũng như quy trình pháp lý hiện hành.
-                </p>
-              </div>
-              <div className="grid gap-4">
-                {[
-                  'Đánh giá bối cảnh trước khi đề xuất phương án.',
-                  'Phân chia rõ phạm vi, mục tiêu và thời gian thực hiện.',
-                  'Cập nhật tiến độ theo từng giai đoạn và báo cáo kết quả minh bạch.',
-                ].map((item) => (
-                  <div key={item} className="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-sm">
-                    <div className="flex items-start gap-3">
-                      <ShieldCheck className="mt-0.5 h-5 w-5 text-primary-700" />
-                      <span>{item}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="py-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
