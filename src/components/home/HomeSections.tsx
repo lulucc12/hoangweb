@@ -90,8 +90,8 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-8 bg-white/5 w-fit px-4 py-2 rounded-lg" style={{ border: '1px solid rgba(225,29,72,0.9)', boxShadow: '0 4px 12px rgba(225,29,72,0.12), inset 0 1px 0 rgba(255,255,255,0.6)' }}>
-            <span className="w-3 h-3 bg-yellow-400 rounded-full mt-0.5 ring-1 ring-yellow-300" />
+          <div className="flex items-center gap-2 mb-8 bg-white/5 w-fit px-4 py-1 rounded-lg" style={{ border: '1px solid rgba(225,29,72,0.9)', boxShadow: '0 4px 12px rgba(225,29,72,0.12), inset 0 1px 0 rgba(255,255,255,0.6)' }}>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mt-0 ring-1 ring-yellow-300" />
             <span className="text-primary-100 font-medium">Cam kết bảo mật thông tin cấp độ doanh nghiệp</span>
           </div>
 
