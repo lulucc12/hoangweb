@@ -76,7 +76,10 @@ export function HeroSection() {
           </div>
 
           <div className="grid gap-4 max-w-2xl mb-6 sm:grid-cols-3">
-            <div className="rounded-full bg-[linear-gradient(135deg,rgba(252,245,220,0.98),rgba(240,224,170,0.92))] px-4 py-2 text-sm text-amber-950 shadow-[0_2px_10px_rgba(255,255,255,0.35),0_1px_3px_rgba(120,82,20,0.18),inset_0_1px_0_rgba(255,255,255,0.7)]" style={{ border: '1px solid #c5a059' }}>
+            <div
+              className="rounded-full bg-[linear-gradient(135deg,rgba(252,245,220,0.98),rgba(240,224,170,0.92))] px-4 py-2 text-sm text-amber-950 shadow-[0_2px_10px_rgba(255,255,255,0.35),0_1px_3px_rgba(120,82,20,0.18),inset_0_1px_0_rgba(255,255,255,0.7)]"
+              style={{ border: '1px solid rgba(225,29,72,0.9)', boxShadow: '0 4px 12px rgba(225,29,72,0.12), inset 0 1px 0 rgba(255,255,255,0.6)' }}
+            >
               Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền (180 ngày)
             </div>
             <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-primary-100">
