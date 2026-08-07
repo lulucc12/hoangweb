@@ -78,7 +78,7 @@ export function HeroSection() {
           <div className="grid gap-4 max-w-2xl mb-6 sm:grid-cols-3">
             <div
               className="rounded-full bg-[linear-gradient(135deg,rgba(252,245,220,0.98),rgba(240,224,170,0.92))] px-4 py-2 text-sm text-amber-950 shadow-[0_2px_10px_rgba(255,255,255,0.35),0_1px_3px_rgba(120,82,20,0.18),inset_0_1px_0_rgba(255,255,255,0.7)]"
-              style={{ border: '1px solid rgba(225,29,72,0.9)', boxShadow: '0 4px 12px rgba(225,29,72,0.12), inset 0 1px 0 rgba(255,255,255,0.6)' }}
+              style={{ border: '1px solid #c5a059' }}
             >
               Phục hồi tài khoản bị khóa, xâm phạm hoặc mất quyền (180 ngày)
             </div>
@@ -90,7 +90,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-8 bg-white/5 border border-green-500/20 w-fit px-4 py-2 rounded-lg">
+          <div className="flex items-center gap-2 mb-8 bg-white/5 w-fit px-4 py-2 rounded-lg" style={{ border: '1px solid rgba(225,29,72,0.9)', boxShadow: '0 4px 12px rgba(225,29,72,0.12), inset 0 1px 0 rgba(255,255,255,0.6)' }}>
             <span className="w-3 h-3 bg-yellow-400 rounded-full mt-0.5 ring-1 ring-yellow-300" />
             <span className="text-primary-100 font-medium">Cam kết bảo mật thông tin cấp độ doanh nghiệp</span>
           </div>
