@@ -88,8 +88,8 @@ export function HeroSection() {
           </div>
 
           <div className="flex items-center gap-2 mb-8 bg-white/5 border border-green-500/20 w-fit px-4 py-2 rounded-lg">
-            <CheckCircle className="w-5 h-5 text-green-300" />
-            <span className="text-primary-100 font-medium">cam kết bảo mật thông tin cấp độ doanh nghiệp</span>
+            <span className="w-3 h-3 bg-yellow-400 rounded-full mt-0.5 ring-1 ring-yellow-300" />
+            <span className="text-primary-100 font-medium">Cam kết bảo mật thông tin cấp độ doanh nghiệp</span>
           </div>
 
           <div className="grid grid-cols-2 gap-5 mb-12">
