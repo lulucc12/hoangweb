@@ -60,7 +60,7 @@ export function HeroSection() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-white/5 text-primary-100 px-4 py-2 rounded-full text-sm font-semibold mb-8">
             <span className="w-2 h-2 bg-green-300 rounded-full"></span>
-            Tư vấn khủng hoảng truyền thông chuyên nghiệp
+            Tư vấn khủng hoảng truyền thông B2B &amp; B2C
           </div>
 
           <div className="mb-6 rounded-2xl border bg-transparent p-4 sm:p-6 w-fit" style={{ borderColor: '#c5a059' }}>
