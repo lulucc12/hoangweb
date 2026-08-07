@@ -30,7 +30,7 @@ export default function ProcessTimeline() {
     <section className="py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 mb-4 leading-tight">Quy Trình Làm Việc Chuyên Nghiệp</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 mb-4 leading-tight">Quy Trình Làm Việc</h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Mỗi trường hợp đều được xử lý có phương án, có hồ sơ và có tiến độ rõ ràng.
           </p>
