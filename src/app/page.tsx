@@ -51,24 +51,6 @@ export default function HomePage() {
     <div className="bg-neutral-50">
       <HeroSection />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 relative z-10">
-        <div className="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
-          <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5">
-              <h2 className="text-base font-semibold text-slate-900 mb-3">Khi nào nên liên hệ?</h2>
-              <ul className="text-sm text-slate-700 space-y-2">
-                <li>✓ Xuất hiện thông tin sai sự thật</li>
-                <li>✓ Fanpage bị chiếm quyền quản trị</li>
-                <li>✓ Tài khoản Facebook bị vô hiệu hóa</li>
-                <li>✓ Bị mạo danh thương hiệu</li>
-                <li>✓ Khủng hoảng truyền thông trên mạng xã hội</li>
-                <li>✓ Cần đánh giá phương án xử lý</li>
-              </ul>
-            </div>
-            <div className="w-full">
-              <ConsultationRequestForm source="Trang Chủ" className="w-full" />
-            </div>
-          </div>
-        </div>
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-5 text-center text-slate-900">
           <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
             <div className="text-2xl font-bold text-primary-900">1500+</div>
