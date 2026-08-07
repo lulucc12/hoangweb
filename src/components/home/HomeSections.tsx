@@ -150,7 +150,7 @@ export function ContractInvoiceSection() {
                 Minh bạch và đúng quy trình
               </span>
               <h2 className="text-2xl md:text-3xl font-bold text-primary-900 mb-4">
-                Quy trình đánh giá và triển khai
+                Quy trình đánh giá và tư vấn
               </h2>
               <p className="text-base md:text-lg text-neutral-600 mb-6">
                 Đánh giá rủi ro, xác định mục tiêu và xây dựng phương án phù hợp với từng đặc thù sự cố.
