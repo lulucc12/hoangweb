@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 text-sm text-neutral-400 space-y-2">
-          <p><span className="font-semibold text-neutral-300">Đơn vị vận hành:</span> HKD SỬ LÝ KHỦNG HOẢNG TRUYỀN THÔNG HOÀNG NGUYỄN</p>
+          <p><span className="font-semibold text-neutral-300">Đơn vị vận hành:</span> TƯ VẤN TRUYỀN THÔNG HOÀNG NGUYỄN</p>
           <p><span className="font-semibold text-neutral-300">Tên viết tắt:</span> HOANG NGUYEN CRISIS SHIELD MEDIA</p>
           <p><span className="font-semibold text-neutral-300">Hình thức hoạt động:</span> Cung cấp dịch vụ trực tuyến trên phạm vi toàn quốc</p>
           <p><span className="font-semibold text-neutral-300">Mã số thuế:</span> 8887207810</p>
