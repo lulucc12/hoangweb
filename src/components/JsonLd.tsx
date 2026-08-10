@@ -7,9 +7,9 @@ export function LocalBusinessSchema() {
     name: 'Crisis Shield - Tư vấn & Xử lý Khủng hoảng Truyền thông',
     description:
       'Chuyên gia tư vấn khủng hoảng truyền thông, hỗ trợ thủ tục khiếu nại bảo vệ bản quyền/thương hiệu, quản trị danh tiếng doanh nghiệp. Hotline 24/7: 0877 852 153.',
-    url: 'https://crisisshield.vn',
+    url: 'https://crisisshield.biz.vn',
     telephone: '+84877852153',
-    email: 'hoang.helpmedia@gmail.com',
+    email: 'contact@crisisshield.biz.vn',
     areaServed: 'VN',
     availableLanguage: ['Vietnamese', 'English'],
     openingHoursSpecification: {
@@ -45,7 +45,7 @@ export function ServiceSchema() {
     provider: {
       '@type': 'LocalBusiness',
       name: 'Crisis Shield',
-      url: 'https://crisisshield.vn',
+      url: 'https://crisisshield.biz.vn',
     },
     areaServed: 'VN',
     hasOfferCatalog: {
@@ -124,8 +124,8 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'Crisis Shield',
     legalName: 'Crisis Shield Consulting',
-    url: 'https://crisisshield.vn',
-    logo: 'https://crisisshield.vn/logo.png',
+    url: 'https://crisisshield.biz.vn',
+    logo: 'https://crisisshield.biz.vn/logo.png',
     foundingDate: '2017',
     contactPoint: [
       {

@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           <li>Bạn có quyền yêu cầu chúng tôi không sử dụng dữ liệu của bạn cho mục đích quảng cáo.</li>
           <li>Bạn có quyền yêu cầu truy cập, sửa đổi hoặc xoá dữ liệu cá nhân của mình.</li>
         </ul>
-        <p>Nếu bạn có yêu cầu về quyền riêng tư hoặc dữ liệu, vui lòng liên hệ qua email: hoang.helpmedia@gmail.com.</p>
+        <p>Nếu bạn có yêu cầu về quyền riêng tư hoặc dữ liệu, vui lòng liên hệ qua email: contact@crisisshield.biz.vn.</p>
 
         <h2 className="text-2xl font-bold">5. Cam kết Bảo mật (NDA)</h2>
         <p>Mọi giao dịch và thông tin trao đổi đều được cam kết bảo mật tuyệt đối thông qua Hợp đồng Bảo mật Thông tin (NDA). Chúng tôi cam kết:</p>
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
         <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách bảo mật, vui lòng liên hệ:</p>
         <p>
           <strong>Hotline:</strong> 0877 852 153<br />
-          <strong>Email:</strong> hoang.helpmedia@gmail.com
+          <strong>Email:</strong> contact@crisisshield.biz.vn
         </p>
       </div>
 

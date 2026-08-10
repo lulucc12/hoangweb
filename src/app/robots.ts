@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/', '/static/', '/*.json$'],
     },
-    sitemap: 'https://crisisshield.vn/sitemap.xml',
-    host: 'https://crisisshield.vn',
+    sitemap: 'https://crisisshield.biz.vn/sitemap.xml',
+    host: 'https://crisisshield.biz.vn',
   };
 }

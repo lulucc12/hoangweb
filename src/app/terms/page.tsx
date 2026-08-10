@@ -31,7 +31,7 @@ export default function TermsPage() {
 
         <h3>6. Liên hệ</h3>
         <p>Nếu có bất kỳ băn khoăn nào, bạn hãy liên hệ trực tiếp để được giải đáp nhanh chóng:</p>
-        <p><strong>Hotline:</strong> 0877 852 153 - <strong>Email:</strong> hoang.helpmedia@gmail.com</p>
+        <p><strong>Hotline:</strong> 0877 852 153 - <strong>Email:</strong> contact@crisisshield.biz.vn</p>
       </div>
 
     </div>
