@@ -11,7 +11,7 @@ interface ConsultationRequestFormProps {
 
 export default function ConsultationRequestForm({ source = 'Trang Chủ', className = 'max-w-xl mx-auto' }: ConsultationRequestFormProps) {
   const openZalo = (message: string) => {
-    const zaloUrl = `https://zalo.me/0877852153?text=${encodeURIComponent(message)}`;
+    const zaloUrl = `http://zalo.me/1221769728911537809?text=${encodeURIComponent(message)}`;
     const newWindow = window.open(zaloUrl, '_blank', 'noopener,noreferrer');
     if (!newWindow) {
       window.location.href = zaloUrl;

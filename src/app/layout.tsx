@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatbotPlaceholder from "@/components/ChatbotPlaceholder";
 import StickyBottomBar from "@/components/StickyBottomBar";
+import ZaloPopup from "@/components/ZaloPopup";
 import JsonLd from "@/components/JsonLd";
 import GoogleTag from "@/components/GoogleTag";
 import { createMetadata } from "@/lib/seo";
@@ -45,6 +46,7 @@ export default function RootLayout({
         <main className="flex-1 pt-20">{children}</main>
         <Footer />
         <ChatbotPlaceholder />
+        <ZaloPopup />
         <StickyBottomBar />
       </body>
     </html>

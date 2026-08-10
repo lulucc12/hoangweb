@@ -18,7 +18,7 @@ export function ContactActionLink({
   onClick,
   ...props
 }: ContactActionLinkProps) {
-  const href = action === 'call' ? 'tel:0877852153' : 'https://zalo.me/0877852153';
+  const href = action === 'call' ? 'tel:0877852153' : 'http://zalo.me/1221769728911537809';
 
   const handleClick = async (event: MouseEvent<HTMLAnchorElement>) => {
     if (onClick) {
