@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const siteName = "Crisis Shield";
-export const siteUrl = "https://crisisshield.biz.vn";
+export const siteUrl = "https://www.crisisshield.biz.vn";
 export const defaultDescription =
   "Crisis Shield cung cấp tư vấn khủng hoảng truyền thông, hỗ trợ khôi phục tài khoản Facebook, khiếu nại nội dung và bảo vệ danh tiếng doanh nghiệp.";
 export const defaultKeywords = [

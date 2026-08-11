@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://crisisshield.biz.vn';
+  const baseUrl = 'https://www.crisisshield.biz.vn';
   const lastModified = new Date();
 
   const routes = [
